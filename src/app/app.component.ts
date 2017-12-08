@@ -52,7 +52,9 @@ export class MyApp {
   @HostBinding('class.human-responsive-medium') isMedium;
   @HostBinding('class.human-responsive-large') isLarge;
 
-  constructor(private translate: TranslateService, platform: Platform, settings: Settings, private config: Config, private statusBar: StatusBar, private splashScreen: SplashScreen) {
+  settings:Settings
+
+  constructor(private translate: TranslateService, private tts: TextToSpeech, platform: Platform, settings: Settings, private config: Config, private statusBar: StatusBar, private splashScreen: SplashScreen) {
     platform.ready().then(() => {
       // Okay, so the platform is ready and our plugins are available.
       // Here you can do any higher level native things you might need.
@@ -70,11 +72,17 @@ export class MyApp {
       });
     // Get default language in settings
     settings.load().then(() => {
-      this.initTranslate(settings.allSettings.language);
-      settings.dynamicContrast.next(settings.allSettings.aux_contrast);
-      settings.dynamicContrast.next(settings.allSettings.aux_size);
+      this.initTranslate(settings.allSettings.aux_lang);
+      // We reset each type for explanations purposes
+      // settings.dynamicContrast.next(settings.allSettings.aux_contrast);
+      // settings.dynamicSize.next(settings.allSettings.aux_size);
     });
 
+  }
+
+  ionViewWillLeave() {
+    this.settings.dynamicSize.unsubscribe();
+    this.settings.dynamicContrast.unsubscribe();
   }
 
   changeTheme(theme): void {
