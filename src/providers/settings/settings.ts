@@ -15,10 +15,12 @@ export class Settings {
   _readyPromise: Promise<any>;
 
   dynamicContrast:Subject<string>;
+  dynamicSize:Subject<string>;
 
   constructor(public storage: Storage, defaults: any) {
     this._defaults = defaults;
     this.dynamicContrast = new Subject<string>();
+    this.dynamicSize = new Subject<string>();
   }
 
 
