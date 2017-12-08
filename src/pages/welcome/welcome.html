@@ -12,15 +12,15 @@
   </div>
 -->
 <style>
-  .flag{height:50px;width:auto}
+  .flag{height:40px;width:auto}
 </style>
 
 <h2 text-center>{{ 'AUX_TEXT_HAUT_WELCOME' | translate}}</h2>
-<ion-grid fixed style="width:70%;right:15%;position:absolute;" padding>
+<ion-grid fixed style="width:70%;right:15%;position:absolute;">
   <ion-row justify-content-center padding >
     <ion-col text-center>
-      <img (click)="setlang('fr')" src="../assets/img_aux/fr.svg" class="flag">
-      <img (click)="setlang('fr')" src="../assets/img_aux/ch.svg" class="flag">
+        <img (click)="setlang('fr')" src="../assets/img_aux/ch.svg" class="flag">
+        <img (click)="setlang('fr')" src="../assets/img_aux/fr.svg" class="flag">
     </ion-col>
     <ion-col  text-center>
       <img (click)="setlang('de')" src="../assets/img_aux/de.svg" class="flag">
@@ -31,7 +31,7 @@
       <img (click)="setlang('it')" src="../assets/img_aux/ch.svg" class="flag">
     </ion-col>
   </ion-row>
-  <ion-row  text-center padding>
+  <ion-row  text-center >
     <ion-col  text-center>
       <img (click)="setlang('en')" src="../assets/img_aux/uk.svg" class="flag">
     </ion-col>
@@ -42,7 +42,7 @@
       <img (click)="setlang('es')" src="../assets/img_aux/es.svg" class="flag">
     </ion-col>
   </ion-row>
-  <ion-row padding>
+  <ion-row >
     <ion-col text-center>
       <h2 id="text_bas">{{text_bas}}</h2>
     </ion-col>
