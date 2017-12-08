@@ -35,9 +35,9 @@ export function provideSettings(storage: Storage) {
     option2: 'Ionitron J. Framework',
     option3: '3',
     option4: 'Hello',
-    textSize: 1, // (em)
-    language: 'en',
+    aux_lang: 'fr',
     aux_contrast: 'default', // (B/W)
+    aux_size: 'default', // (B/W)
   });
 }
 

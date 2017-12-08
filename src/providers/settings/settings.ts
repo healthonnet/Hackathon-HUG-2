@@ -14,11 +14,16 @@ export class Settings {
   _defaults: any;
   _readyPromise: Promise<any>;
 
+  dynamicContrast:Subject<string>;
+  dynamicSize:Subject<string>;
 
   constructor(public storage: Storage, defaults: any) {
     this._defaults = defaults;
+    this.dynamicContrast = new Subject<string>();
+    this.dynamicSize = new Subject<string>();
   }
-  dynamicContrast = new Subject<string>();
+
+
   load() {
     return this.storage.get(this.SETTINGS_KEY).then((value) => {
       if (value) {

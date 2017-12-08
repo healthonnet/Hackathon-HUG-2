@@ -46,9 +46,11 @@ export class MyApp {
     { title: 'Settings', component: 'SettingsPage' },
   ]
 
-  @HostBinding('class.dark') isDark;
-  @HostBinding('class.blue') isBlue;
-  @HostBinding('class.light') isLight;
+  @HostBinding('class.human-responsive-dark') isDark;
+  @HostBinding('class.human-responsive-blue') isBlue;
+  @HostBinding('class.human-responsive-light') isLight;
+  @HostBinding('class.human-responsive-medium') isMedium;
+  @HostBinding('class.human-responsive-large') isLarge;
 
   constructor(private translate: TranslateService, platform: Platform, settings: Settings, private config: Config, private statusBar: StatusBar, private splashScreen: SplashScreen) {
     platform.ready().then(() => {
@@ -62,11 +64,15 @@ export class MyApp {
       .subscribe((value) => {
         this.changeTheme(value);
       });
-
+    settings.dynamicSize
+      .subscribe((value) => {
+        this.changeSize(value);
+      });
     // Get default language in settings
     settings.load().then(() => {
       this.initTranslate(settings.allSettings.language);
       settings.dynamicContrast.next(settings.allSettings.aux_contrast);
+      settings.dynamicContrast.next(settings.allSettings.aux_size);
     });
 
   }
@@ -96,6 +102,25 @@ export class MyApp {
         this.isLight = false;
         this.isDark  = false;
         break;
+      }
+    }
+  }
+
+  changeSize(size): void {
+    switch(size) {
+      case "medium": {
+        this.isMedium = true;
+        this.isLarge = false;
+        break;
+      }
+      case "large": {
+        this.isMedium = false;
+        this.isLarge = true;
+        break;
+      }
+      default: {
+        this.isMedium =  false;
+        this.isLarge =  false;
       }
     }
   }

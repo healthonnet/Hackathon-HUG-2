@@ -14,47 +14,6 @@ page-welcome {
     to { background-position: 100% 0; }
   }
 
-  .contrast {
-    height: 90%;
-    position: absolute;
-    bottom: 0;
-    font-size: 4em;
-    text-align: center;
-    .row {
-      height: 50%;
-    }
-    p {
-      margin-top: 5%;
-    }
-    .icon {
-      font-size: 2em;
-      margin-top: 15%;
-    }
-
-    .chambray {
-      color: #000;
-      background-color: #fff;
-      border: 20px solid #3A539B;
-    }
-    .blue {
-      color: #FFE400;
-      background-color: #005aff;
-      border: 20px solid #FFE400;
-
-    }
-    .light {
-      color: #000;
-      background-color: #d2efe9;
-      border: 20px solid #F00;
-    }
-    .dark {
-      color: #fff;
-      background-color: #242424;
-      border: 20px solid #FFF000;
-
-    }
-  }
-
   .splash-info {
     position: relative;
     z-index: 2;
