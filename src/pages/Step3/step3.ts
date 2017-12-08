@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController } from 'ionic-angular';
+import {Settings} from "../../providers/settings/settings";
 
 /**
  * The Welcome Page is a splash page that quickly describes the app,
@@ -16,8 +17,15 @@ export class Step3Page {
 
   // If we need an opt-in for the next step
   needValidation = true;
+  mysizeclass='small';
+  
+  constructor(public navCtrl: NavController,  public settings: Settings) { }
 
-  constructor(public navCtrl: NavController) { }
+  setsize(size) {
+    this.settings.setValue('aux_size',size);
+    console.log('aux_size is set to '+size);
+    this.mysizeclass=size;
+  }
 
   continue() {
     this.navCtrl.push('TabsPage');
