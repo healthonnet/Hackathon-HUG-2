@@ -14,9 +14,15 @@ import { IonicPage, NavController } from 'ionic-angular';
 })
 export class Step2Page {
 
+  // If we need an opt-in for the next step
+  needValidation = true;
+
   constructor(public navCtrl: NavController) { }
 
   continue() {
     this.navCtrl.push('TabsPage');
+  }
+  back() {
+    this.navCtrl.pop();
   }
 }
