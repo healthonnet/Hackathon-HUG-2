@@ -1,11 +1,38 @@
 <ion-content scroll="false">
-  <div class="splash-bg"></div>
+<!--
+<div class="splash-bg"></div>
   <div class="splash-info">
     <div class="splash-logo"></div>
     <div class="splash-intro">
       {{ 'WELCOME_INTRO' | translate }}
     </div>
   </div>
+-->
+<ion-grid>
+  <ion-row>
+    <ion-col>
+      <img src="../assets/img_aux/uk.svg">
+    </ion-col>
+    <ion-col>
+      <img src="../assets/img_aux/fr.svg.png">
+    </ion-col>
+    <ion-col>
+      <img src="../assets/img_aux/de.svg.png">
+    </ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col>
+      <img src="../assets/img_aux/pt.svg.png">
+    </ion-col>
+    <ion-col>
+      <img src="../assets/img_aux/it.svg.png">
+    </ion-col>
+    <ion-col>
+      <img src="../assets/img_aux/sf.svg.png">
+    </ion-col>
+  </ion-row>
+</ion-grid>
+
   <div padding>
     <button ion-button block (click)="continue()">{{ 'TUTORIAL_CONTINUE_BUTTON' | translate }}</button>
   </div>

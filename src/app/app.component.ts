@@ -48,9 +48,7 @@ export class MyApp {
     platform.ready().then(() => {
       // Okay, so the platform is ready and our plugins are available.
       // Here you can do any higher level native things you might need.
-      if (false) {
-        this.screenOrientation.lock(this.screenOrientation.ORIENTATIONS.LANDSCAPE);
-      }
+      this.screenOrientation.lock(this.screenOrientation.ORIENTATIONS.LANDSCAPE);
       this.statusBar.styleDefault();
       this.splashScreen.hide();
     });
