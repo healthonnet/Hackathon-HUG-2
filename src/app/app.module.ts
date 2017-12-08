@@ -16,6 +16,7 @@ import { Settings } from '../providers/providers';
 import { User } from '../providers/providers';
 import { Api } from '../providers/providers';
 import { MyApp } from './app.component';
+import { ThemerProvider } from '../providers/themer/themer';
 
 // The translate loader needs to know where to load i18n files
 // in Ionic's static asset pipeline.
@@ -36,8 +37,9 @@ export function provideSettings(storage: Storage) {
     option3: '3',
     option4: 'Hello',
     textSize: 1, // (em)
-    colorTheme: 'normal', // (B/W)
-    language: 'fr'
+    language: 'en',
+    language: 'en',
+    aux_contrast: 'default', // (B/W)
   });
 }
 
@@ -73,7 +75,9 @@ export function provideSettings(storage: Storage) {
     StatusBar,
     { provide: Settings, useFactory: provideSettings, deps: [Storage] },
     // Keep this to enable Ionic's runtime error handling during development
-    { provide: ErrorHandler, useClass: IonicErrorHandler }
+    { provide: ErrorHandler, useClass: IonicErrorHandler },
+    ThemerProvider
   ]
 })
 export class AppModule { }
+
