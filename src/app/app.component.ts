@@ -1,4 +1,4 @@
-import { Component, ViewChild } from '@angular/core';
+import { Component, ViewChild, HostBinding } from '@angular/core';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { StatusBar } from '@ionic-native/status-bar';
 import { TranslateService } from '@ngx-translate/core';
@@ -46,6 +46,10 @@ export class MyApp {
     { title: 'Settings', component: 'SettingsPage' },
   ]
 
+  @HostBinding('class.dark') isDark;
+  @HostBinding('class.blue') isBlue;
+  @HostBinding('class.light') isLight;
+
   constructor(private translate: TranslateService, platform: Platform, settings: Settings, private config: Config, private statusBar: StatusBar, private splashScreen: SplashScreen) {
     platform.ready().then(() => {
       // Okay, so the platform is ready and our plugins are available.
@@ -53,15 +57,58 @@ export class MyApp {
       this.statusBar.styleDefault();
       this.splashScreen.hide();
     });
+
+    settings.dynamicContrast
+      .subscribe((value) => {
+        this.changeTheme(value);
+      });
+
     // Get default language in settings
     settings.load().then(() => {
       this.initTranslate(settings.allSettings.language);
+      settings.dynamicContrast.next(settings.allSettings.aux_contrast);
     });
+
+  }
+
+  changeTheme(theme): void {
+    switch(theme) {
+      case "dark": {
+        this.isBlue = false;
+        this.isLight = false;
+        this.isDark  = true;
+        break;
+      }
+      case "blue": {
+        this.isBlue = true;
+        this.isLight = false;
+        this.isDark  = false;
+        break;
+      }
+      case "light": {
+        this.isBlue = false;
+        this.isLight = true;
+        this.isDark  = false;
+        break;
+      }
+      default: {
+        this.isBlue = false;
+        this.isLight = false;
+        this.isDark  = false;
+        break;
+      }
+    }
   }
 
   initTranslate(defaultLanguage) {
     // Set the default language for translation strings, and the current language.
     this.translate.setDefaultLang(defaultLanguage);
+    this.translate.use("de");
+    this.translate.use("pt");
+    this.translate.use("fr");
+    this.translate.use("en");
+    this.translate.use("it");
+    this.translate.use("es");
 
     if (this.translate.getBrowserLang() !== undefined) {
       this.translate.use(this.translate.getBrowserLang());

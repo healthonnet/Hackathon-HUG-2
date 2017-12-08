@@ -5,22 +5,22 @@
   <h3 text-center>{{ 'AUX_TEXT_HAUT_STEP2' | translate }}</h3>
   <ion-grid text-center	class="contrast">
     <ion-row>
-      <ion-col (click)="continue()" col-6 class="chambray">
+      <ion-col (click)="setTheme('chambray')" col-6 class="chambray">
         <ion-icon name="beer"></ion-icon>
         <p>My Beer</p>
       </ion-col>
-      <ion-col (click)="continue()" col-6 class="blue">
-        <ion-icon name="cc"></ion-icon>
-        <!--<fa name="fa-television" animation="spin"></fa>-->
+
+      <ion-col (click)="setTheme('blue')" col-6 class="blue">
+        <ion-icon name="beer"></ion-icon>
         <p>My Beer</p>
       </ion-col>
     </ion-row>
     <ion-row>
-      <ion-col (click)="continue()" col-6 class="dark">
+      <ion-col (click)="setTheme('dark')" col-6 class="dark">
         <ion-icon name="beer"></ion-icon>
         <p>My Beer</p>
       </ion-col>
-      <ion-col (click)="continue()" col-6 class="light">
+      <ion-col (click)="setTheme('light')" col-6 class="light">
         <ion-icon name="beer"></ion-icon>
         <p>My Beer</p>
       </ion-col>

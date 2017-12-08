@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
 import { Storage } from '@ionic/storage';
+import {Subject} from "rxjs";
 
 /**
  * A simple settings/config class for storing key/value pairs with persistence.
@@ -13,10 +14,11 @@ export class Settings {
   _defaults: any;
   _readyPromise: Promise<any>;
 
+
   constructor(public storage: Storage, defaults: any) {
     this._defaults = defaults;
   }
-
+  dynamicContrast = new Subject<string>();
   load() {
     return this.storage.get(this.SETTINGS_KEY).then((value) => {
       if (value) {

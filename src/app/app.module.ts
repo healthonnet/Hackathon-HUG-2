@@ -36,8 +36,8 @@ export function provideSettings(storage: Storage) {
     option3: '3',
     option4: 'Hello',
     textSize: 1, // (em)
-    colorTheme: 'normal', // (B/W)
-    language: 'fr'
+    language: 'en',
+    aux_contrast: 'default', // (B/W)
   });
 }
 
@@ -77,3 +77,4 @@ export function provideSettings(storage: Storage) {
   ]
 })
 export class AppModule { }
+
