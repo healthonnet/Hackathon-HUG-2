@@ -18,12 +18,16 @@ export class Step3Page {
   // If we need an opt-in for the next step
   needValidation = true;
   mysizeclass='small';
-
+  mycolor = { small:'default', medium:'default', large:'default'}
   constructor(public navCtrl: NavController,  public settings: Settings) { }
 
   setsize(size) {
     this.settings.dynamicSize.next(size);
     this.settings.setValue('aux_size',size);
+    this.mycolor.small='default';
+    this.mycolor.medium='default';
+    this.mycolor.large='default';
+    this.mycolor[size]='secondary';
 
     console.log('aux_size is set to '+size);
     this.mysizeclass=size;

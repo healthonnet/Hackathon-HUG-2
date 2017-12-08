@@ -12,9 +12,9 @@
     </style>
 
     <div text-center>
-      <button (click)="setsize('small')" small ion-button>{{ 'AUX_STEP3_BUTTON_SMALL' | translate }}</button>
-      <button (click)="setsize('medium')" ion-button>{{ 'AUX_STEP3_BUTTON_MEDIUM' | translate }}</button>
-      <button (click)="setsize('large')" large ion-button>{{ 'AUX_STEP3_BUTTON_LARGE' | translate }}</button>
+      <button (click)="setsize('small')" color="{{ mycolor.small}}" small ion-button>{{ 'AUX_STEP3_BUTTON_SMALL' | translate }}</button>
+      <button (click)="setsize('medium')" color="{{ mycolor.medium}}" ion-button>{{ 'AUX_STEP3_BUTTON_MEDIUM' | translate }}</button>
+      <button (click)="setsize('large')" color="{{ mycolor.large}}" large ion-button>{{ 'AUX_STEP3_BUTTON_LARGE' | translate }}</button>
     </div>
 
     <p text-center class="{{ mysizeclass }}">{{ 'AUX_STEP3_MAIN_TEXT' | translate }}</p>

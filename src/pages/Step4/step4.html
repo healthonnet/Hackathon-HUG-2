@@ -8,8 +8,8 @@
   <ion-grid style="width:70%;right:15%;position:absolute">
     <ion-row justify-content-center>
       <ion-col col-6 align-self-start>
-          <button (click)="setvocalize('yes')" large ion-button>{{ 'AUX_STEP4_YES' | translate }}</button>
-          <button (click)="setvocalize('no')" large ion-button>{{ 'AUX_STEP4_NO' | translate }}</button>
+          <button (click)="setvocalize(true)" [color]="vocalize ? 'secondary' : 'default'" large ion-button>{{ 'AUX_STEP4_YES' | translate }}</button>
+          <button (click)="setvocalize(false)" [color]="vocalize ? 'default' : 'secondary'" large ion-button>{{ 'AUX_STEP4_NO' | translate }}</button>
       </ion-col>
     </ion-row>
 </ion-grid>

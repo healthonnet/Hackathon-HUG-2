@@ -12,9 +12,9 @@
     </style>
 
     <div text-center>
-      <button (click)="setlanguagelevel('A1')" ion-button>{{ 'AUX_STEP5_LANGLEVEL1' | translate }}</button><br>
-      <button (click)="setlanguagelevel('A2')" ion-button>{{ 'AUX_STEP5_LANGLEVEL2' | translate }}</button><br>
-      <button (click)="setlanguagelevel('B1')" ion-button>{{ 'AUX_STEP5_LANGLEVEL3' | translate }}</button><br>
+      <button (click)="setlanguagelevel('A1')" [color]="languagelevel=='A1' ? 'secondary' : 'default'" ion-button>{{ 'AUX_STEP5_LANGLEVEL1' | translate }}</button><br>
+      <button (click)="setlanguagelevel('A2')" [color]="languagelevel=='A2' ? 'secondary' : 'default'" ion-button>{{ 'AUX_STEP5_LANGLEVEL2' | translate }}</button><br>
+      <button (click)="setlanguagelevel('B1')" [color]="languagelevel=='B1' ? 'secondary' : 'default'" ion-button>{{ 'AUX_STEP5_LANGLEVEL3' | translate }}</button><br>
     </div>
   </div>
 

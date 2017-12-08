@@ -17,12 +17,13 @@ export class Step5Page {
 
   // If we need an opt-in for the next step
   needValidation = true;
-  
+  languagelevel = 'A1';
   constructor(public navCtrl: NavController,  public settings: Settings) { }
 
-  setlanguagelevel(ll) {
-    this.settings.setValue('aux_languagelevel',ll);
-    console.log('aux_languagelevel is set to '+ll);
+  setlanguagelevel(languagelevel) {
+    this.settings.setValue('aux_languagelevel',languagelevel);
+    console.log('aux_languagelevel is set to '+languagelevel);
+    this.languagelevel=languagelevel;
   }
 
   show_setting(s){console.log(s+" is set to "+this.settings.allSettings[s])}
@@ -34,7 +35,7 @@ export class Step5Page {
     this.show_setting('aux_size');
     this.show_setting('aux_vocalize');
     this.show_setting('aux_languagelevel');
-
+    
   }
   back() {
     this.navCtrl.pop();

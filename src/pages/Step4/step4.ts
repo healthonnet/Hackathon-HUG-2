@@ -17,12 +17,13 @@ export class Step4Page {
 
   // If we need an opt-in for the next step
   needValidation = true;
-
+  vocalize=true;
   constructor(public navCtrl: NavController,  public settings: Settings) { }
 
   setvocalize(vocalize) {
-    this.settings.setValue('aux_vocalize',vocalize=="yes");
-    console.log('aux_vocalize is set to '+(vocalize=="yes"));
+    this.settings.setValue('aux_vocalize',vocalize);
+    this.vocalize=vocalize;
+    console.log('aux_vocalize is set to '+vocalize);
   }
 
   continue() {

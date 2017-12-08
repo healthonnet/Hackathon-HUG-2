@@ -42,10 +42,11 @@ export class WelcomePage implements OnInit {
     console.log('aux_lang is set to '+lang);
     this.text_bas = this.languages[lang];
     this.translate.use(lang)
+    this.lang = lang
+
   }
   continue() {
-    if (this.lang != undefined)
-      this.navCtrl.push('Step2Page');
+    this.navCtrl.push('Step2Page');
   }
 
 }
