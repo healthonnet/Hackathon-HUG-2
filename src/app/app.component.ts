@@ -105,10 +105,10 @@ export class MyApp {
     this.translate.setDefaultLang(defaultLanguage);
     this.translate.use("de");
     this.translate.use("pt");
-    this.translate.use("fr");
     this.translate.use("en");
     this.translate.use("it");
     this.translate.use("es");
+    this.translate.use("fr");
 
     if (this.translate.getBrowserLang() !== undefined) {
       this.translate.use(this.translate.getBrowserLang());

@@ -17,18 +17,24 @@ export class Step5Page {
 
   // If we need an opt-in for the next step
   needValidation = true;
-  mysizeclass='small';
   
   constructor(public navCtrl: NavController,  public settings: Settings) { }
 
-  setsize(size) {
-    this.settings.setValue('aux_size',size);
-    console.log('aux_size is set to '+size);
-    this.mysizeclass=size;
+  setlanguagelevel(ll) {
+    this.settings.setValue('aux_languagelevel',ll);
+    console.log('aux_languagelevel is set to '+ll);
   }
 
+  show_setting(s){console.log(s+" is set to "+this.settings.allSettings[s])}
+
   continue() {
-    this.navCtrl.push('TabsPage');
+    //this.navCtrl.push('TabsPage');
+    this.show_setting('aux_lang');
+    this.show_setting('aux_contrast');
+    this.show_setting('aux_size');
+    this.show_setting('aux_vocalize');
+    this.show_setting('aux_languagelevel');
+
   }
   back() {
     this.navCtrl.pop();

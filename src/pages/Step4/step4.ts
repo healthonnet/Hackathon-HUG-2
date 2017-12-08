@@ -17,14 +17,12 @@ export class Step4Page {
 
   // If we need an opt-in for the next step
   needValidation = true;
-  mysizeclass='small';
-  
+
   constructor(public navCtrl: NavController,  public settings: Settings) { }
 
-  setsize(size) {
-    this.settings.setValue('aux_size',size);
-    console.log('aux_size is set to '+size);
-    this.mysizeclass=size;
+  setvocalize(vocalize) {
+    this.settings.setValue('aux_vocalize',vocalize=="yes");
+    console.log('aux_vocalize is set to '+(vocalize=="yes"));
   }
 
   continue() {

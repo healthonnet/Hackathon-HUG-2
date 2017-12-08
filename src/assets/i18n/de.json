@@ -60,6 +60,9 @@
   "AUX_TEXT_HAUT_STEP4": "Super! Und ziehen Sie vor, den seinen zu benutzen ?",
   "AUX_TEXT_HAUT_STEP5": "Schliesslich, welche Formulierung ?", 
 
+  "AUX_STEP4_YES": "Ja",
+  "AUX_STEP4_NO": "Nein",
+
   "AUX_STEP3_BUTTON_SMALL": "Klein",
   "AUX_STEP3_BUTTON_MEDIUM": "Mittel",
   "AUX_STEP3_BUTTON_LARGE": "Gross",

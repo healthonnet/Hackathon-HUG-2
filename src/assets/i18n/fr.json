@@ -57,6 +57,10 @@
   "AUX_STEP3_BUTTON_LARGE": "Grand",
   "AUX_STEP3_MAIN_TEXT": "On ne connaît que les choses que l'on apprivoise, dit le renard. Les hommes n'ont plus le temps de rien connaître. Ils achètent des choses toutes faites chez les marchands. Mais comme il n'existe point de marchands d'amis, les hommes n'ont plus d'amis. Si tu veux un ami, apprivoise-moi!" ,
 
+  "AUX_STEP4_YES": "Oui",
+  "AUX_STEP4_NO": "Non",
+
+
   "AUX_STEP5_LANGLEVEL1": "C'est fait !",
   "AUX_STEP5_LANGLEVEL2": "Le réglage est terminé.",
   "AUX_STEP5_LANGLEVEL3": "La configuration est achevée"

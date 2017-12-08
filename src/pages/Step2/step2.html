@@ -3,26 +3,23 @@
   <ion-icon *ngIf="navCtrl.canGoBack()" round icon-start (click)="back()" name='arrow-dropleft-circle'class="steps left"></ion-icon>
   <ion-icon *ngIf="needValidation" round icon-start (click)="continue()" name='arrow-dropright-circle' class="steps right"></ion-icon>
   <h3 text-center>{{ 'AUX_TEXT_HAUT_STEP2' | translate }}</h3>
-  <ion-grid text-center	class="contrast">
-    <ion-row>
+
+  <ion-grid	class="contrast" style="width:70%;right:15%;position:absolute">
+    <ion-row align-items-center>
       <ion-col (click)="setTheme('chambray')" col-6 class="chambray">
         <ion-icon name="beer"></ion-icon>
-        <p>My Beer</p>
       </ion-col>
-
-      <ion-col (click)="setTheme('blue')" col-6 class="blue">
+      <ion-col (click)="setTheme('blue')" col-6 class="blue" >
         <ion-icon name="beer"></ion-icon>
-        <p>My Beer</p>
       </ion-col>
     </ion-row>
+
     <ion-row>
       <ion-col (click)="setTheme('dark')" col-6 class="dark">
         <ion-icon name="beer"></ion-icon>
-        <p>My Beer</p>
       </ion-col>
       <ion-col (click)="setTheme('light')" col-6 class="light">
         <ion-icon name="beer"></ion-icon>
-        <p>My Beer</p>
       </ion-col>
     </ion-row>
   </ion-grid>

@@ -63,6 +63,9 @@
   "AUX_TEXT_HAUT_STEP4": "Grande! E você prefere usar o som ?",
   "AUX_TEXT_HAUT_STEP5": "Finalmente, que formulação ?",
 
+  "AUX_STEP4_YES": "Sim",
+  "AUX_STEP4_NO": "Não",
+
   "AUX_STEP3_BUTTON_SMALL": "Pequeno",
   "AUX_STEP3_BUTTON_MEDIUM": "Modo",
   "AUX_STEP3_BUTTON_LARGE": "Grande",

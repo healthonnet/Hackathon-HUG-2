@@ -52,6 +52,11 @@
   "AUX_TEXT_HAUT_STEP4": "¡ Súper! ¿ Y prefiere utilizar el sonido ?",
   "AUX_TEXT_HAUT_STEP5": "¿ Por fin, cuál formulación?",
 
+  "AUX_STEP4_YES": "Si",
+  "AUX_STEP4_NO": "No",
+
+
+
   "AUX_STEP3_BUTTON_SMALL": "Pequeño",
   "AUX_STEP3_BUTTON_MEDIUM": "Medio",
   "AUX_STEP3_BUTTON_LARGE": "Grande",
