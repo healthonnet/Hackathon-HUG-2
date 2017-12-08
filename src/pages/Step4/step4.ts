@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController } from 'ionic-angular';
 import {Settings} from "../../providers/settings/settings";
+import { TextToSpeech } from '@ionic-native/text-to-speech';
+import { TranslateService } from '@ngx-translate/core';
 
 /**
  * The Welcome Page is a splash page that quickly describes the app,
@@ -15,10 +17,27 @@ import {Settings} from "../../providers/settings/settings";
 })
 export class Step4Page {
 
-  // If we need an opt-in for the next step
-  needValidation = true;
   vocalize=true;
-  constructor(public navCtrl: NavController,  public settings: Settings) { }
+
+  constructor(public navCtrl: NavController, private translate: TranslateService, public settings: Settings, private tts: TextToSpeech) {
+    setTimeout(() => {
+      const locales = {
+        en: "en-UK",
+        fr: "fr-FR",
+        es: "es-ES",
+        it: "it-IT",
+        de: "de-DE",
+        pt: "pt-PT",
+      };
+
+      this.tts.speak({
+        text: "Je s'appelle Groot",
+        locale: locales[this.settings.allSettings.aux_lang],
+        rate: 1
+      }).then(() => console.log('Success'))
+        .catch((reason: any) => console.log(reason));
+    }, 1000);
+  }
 
   setvocalize(vocalize) {
     this.settings.setValue('aux_vocalize',vocalize);
