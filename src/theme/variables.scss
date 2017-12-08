@@ -50,6 +50,7 @@ $colors: (
 // App Windows Variables
 // --------------------------------------------------
 // Windows only Sass variables can go here
+@import "./provisu";
 
 
 
@@ -77,7 +78,6 @@ $colors: (
 
 @import "roboto";
 @import "noto-sans";
-@import "./provisu";
 
 // Font Awesome
 $fa-font-path: $font-path;

@@ -20,23 +20,26 @@ export class Step4Page {
   vocalize=true;
 
   constructor(public navCtrl: NavController, private translate: TranslateService, public settings: Settings, private tts: TextToSpeech) {
-    setTimeout(() => {
       const locales = {
-        en: "en-UK",
+        en: "en-GB",
         fr: "fr-FR",
         es: "es-ES",
         it: "it-IT",
         de: "de-DE",
         pt: "pt-PT",
       };
+      translate.get('AUX_TEXT_HAUT_STEP4').subscribe((value: string) => {
+        //=> 'hello world'
+        console.log(value);
+        this.tts.speak({
+          text: value,
+          locale: locales[this.settings.allSettings.aux_lang],
+          rate: 1
+        }).then(() => console.log('Success'))
+          .catch((reason: any) => console.log(reason));
+      });
 
-      this.tts.speak({
-        text: "Je s'appelle Groot",
-        locale: locales[this.settings.allSettings.aux_lang],
-        rate: 1
-      }).then(() => console.log('Success'))
-        .catch((reason: any) => console.log(reason));
-    }, 1000);
+
   }
 
   setvocalize(vocalize) {
