@@ -1,0 +1,13 @@
+<ion-content scroll="false">
+
+  <ion-icon *ngIf="navCtrl.canGoBack()" round icon-start (click)="back()" name='arrow-dropleft-circle'class="steps left"></ion-icon>
+  <ion-icon *ngIf="needValidation" round icon-start (click)="continue()" name='arrow-dropright-circle' class="steps right"></ion-icon>
+  <h3 text-center>{{ 'AUX_TEXT_HAUT_STEP3' | translate }}</h3>
+<ion-scroll scrollY="true">
+  <p>Scroll is a non-flexboxed scroll area that can scroll horizontally or vertically.
+  ion-Scroll Can be used in places where you may not need a full page scroller,
+  but a highly customized one, such as image scubber or comment scroller.</p>
+</ion-scroll>
+
+
+</ion-content>

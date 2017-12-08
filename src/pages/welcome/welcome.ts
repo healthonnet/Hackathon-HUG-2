@@ -28,12 +28,13 @@ export class WelcomePage implements OnInit {
       it:'Italiano',
       za:'Afrikaans'
     }
-
+    
   constructor(public navCtrl: NavController, public settings: Settings, private translate: TranslateService) {
   }
 
   ngOnInit(){
-    this.translate.use(this.lang)
+    //     this.translate.use(this.lang)
+
   }
 
   setlang(lang) {

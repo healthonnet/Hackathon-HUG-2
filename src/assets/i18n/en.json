@@ -66,6 +66,8 @@
   "SEARCH_TITLE": "Search",
   "SEARCH_PLACEHOLDER": "Search the items list, e.g. \"Donald Duck\"",
 
-  "AUX_TEXT_HAUT_WELCOME": "Let's ajust your theme. Which language ?"
+  "AUX_TEXT_HAUT_WELCOME": "Let's adjust your theme. Which language ?",
+  "AUX_TEXT_HAUT_STEP2": "Ok, what about the constrat ?",
+  "AUX_TEXT_HAUT_STEP3": "Ok, and now the text height ?"
 
 }

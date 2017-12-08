@@ -11,28 +11,31 @@
     </div>
   </div>
 -->
+<style>
+img.flag{ width:100%;height:100%}
+</style>
 <h2>{{ 'AUX_TEXT_HAUT_WELCOME' | translate}}</h2>
 <ion-grid>
   <ion-row>
     <ion-col>
-      <img (click)="setlang('en')" src="../assets/img_aux/uk.svg">
+      <img (click)="setlang('en')" src="../assets/img_aux/uk.svg" class="flag">
     </ion-col>
     <ion-col>
-      <img (click)="setlang('fr')" src="../assets/img_aux/fr.svg.png">
+      <img (click)="setlang('fr')" src="../assets/img_aux/fr.svg.png" class="flag">
     </ion-col>
     <ion-col>
-      <img (click)="setlang('de')" src="../assets/img_aux/de.svg.png">
+      <img (click)="setlang('de')" src="../assets/img_aux/de.svg.png" class="flag">
     </ion-col>
   </ion-row>
   <ion-row>
     <ion-col>
-      <img (click)="setlang('pt')" src="../assets/img_aux/pt.svg.png">
+      <img (click)="setlang('pt')" src="../assets/img_aux/pt.svg.png" class="flag">
     </ion-col>
     <ion-col>
-      <img (click)="setlang('it')" src="../assets/img_aux/it.svg.png">
+      <img (click)="setlang('it')" src="../assets/img_aux/it.svg.png" class="flag">
     </ion-col>
     <ion-col>
-      <img (click)="setlang('za')" src="../assets/img_aux/sf.svg.png">
+      <img (click)="setlang('za')" src="../assets/img_aux/sf.svg.png" class="flag">
     </ion-col>
   </ion-row>
 </ion-grid>

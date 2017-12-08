@@ -46,6 +46,8 @@
 
   "SEARCH_TITLE": "Recherche",
 
-  "AUX_TEXT_HAUT_WELCOME": "Choisissons ensemble votre thème. Quelle langue ?"
+  "AUX_TEXT_HAUT_WELCOME": "Choisissons ensemble votre thème. Quelle langue ?",
+  "AUX_TEXT_HAUT_STEP2": "Très bien. Maintenant quel contraste ?",
+  "AUX_TEXT_HAUT_STEP3": "Ok, choisissons la grosseur du texte"
 
 }

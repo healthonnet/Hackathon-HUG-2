@@ -10,9 +10,9 @@ import { IonicPage, NavController } from 'ionic-angular';
 @IonicPage()
 @Component({
   selector: 'page-welcome',
-  templateUrl: 'step2.html'
+  templateUrl: 'step3.html'
 })
-export class Step2Page {
+export class Step3Page {
 
   // If we need an opt-in for the next step
   needValidation = true;
@@ -20,7 +20,7 @@ export class Step2Page {
   constructor(public navCtrl: NavController) { }
 
   continue() {
-    this.navCtrl.push('Step3Page');
+    this.navCtrl.push('TabsPage');
   }
   back() {
     this.navCtrl.pop();
