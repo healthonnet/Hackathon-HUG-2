@@ -3,6 +3,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import { StatusBar } from '@ionic-native/status-bar';
 import { TranslateService } from '@ngx-translate/core';
 import { Config, Nav, Platform } from 'ionic-angular';
+import { TextToSpeech } from '@ionic-native/text-to-speech';
 
 
 import { FirstRunPage } from '../pages/pages';
@@ -60,6 +61,9 @@ export class MyApp {
       // Here you can do any higher level native things you might need.
       this.statusBar.styleDefault();
       this.splashScreen.hide();
+      this.tts.speak('Hello World !')
+        .then(() => console.log('Success'))
+        .catch((reason: any) => console.log(reason));
     });
 
     settings.dynamicContrast
