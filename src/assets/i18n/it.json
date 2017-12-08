@@ -64,5 +64,19 @@
   "CARDS_TITLE": "Social",
 
   "SEARCH_TITLE": "Ricerca",
-  "SEARCH_PLACEHOLDER": "Trova elementi in lista, ex. \"Donald Duck\""
+  "SEARCH_PLACEHOLDER": "Trova elementi in lista, ex. \"Donald Duck\"",
+
+    "AUX_TEXT_HAUT_WELCOME": "Scegliamo insieme il vostro tema. Quale lingua ?",
+  "AUX_TEXT_HAUT_STEP2": "Molto bene. Adesso che contrasto?",
+  "AUX_TEXT_HAUT_STEP3": "Ok, scegliamo la taglia del testo",
+  "AUX_TEXT_HAUT_STEP4": "Fantastici! E preferite utilizzarvi il suono ?",
+  "AUX_TEXT_HAUT_STEP5": "Infine, quale formulazione ?",
+
+  "AUX_STEP3_BUTTON_SMALL": "piccolo",
+  "AUX_STEP3_BUTTON_MEDIUM": "Mezzo",
+  "AUX_STEP3_BUTTON_LARGE": "Grande",
+  "AUX_STEP3_MAIN_TEXT":"Puoi conoscere solo quello che ti è familiare, che ti è domestico - disse la volpe. - Gli uomini non hanno più tempo di conoscere niente. Comprano nei negozi cose già pronte. Ma siccome non esistono negozianti di amici, gli uomini non hanno più amici. Tu, allora, se vuoi un amico, vedi di addomesticarmi."
+
+
+
 }

@@ -68,12 +68,18 @@
 
   "AUX_TEXT_HAUT_WELCOME": "Let's adjust your theme. Which language ?",
   "AUX_TEXT_HAUT_STEP2": "Ok, what about the constrat ?",
-  "AUX_TEXT_HAUT_STEP3": "Ok, and now the text height ?",
+  "AUX_TEXT_HAUT_STEP3": "Ok, and now the text height...",
   "AUX_TEXT_HAUT_STEP4": "Great ! would you like to use the sound ?",
   "AUX_TEXT_HAUT_STEP5": "Last, which language level ?",
 
   "AUX_STEP3_BUTTON_SMALL": "Small",
   "AUX_STEP3_BUTTON_MEDIUM": "Medium",
-  "AUX_STEP3_BUTTON_LARGE": "Big"
+  "AUX_STEP3_BUTTON_LARGE": "Large",
+  "AUX_STEP3_MAIN_TEXT": "We only know the things that we tame, said the fox. People no longer have the time to know anything. They buy things already made for peddlers. But since there are no peddlers of friends, they no longer have friends. If you want a friend, tame me!",
+
+  "AUX_STEP5_LANGLEVEL1": "It's done !",
+  "AUX_STEP5_LANGLEVEL2": "The tuning is finished.",
+  "AUX_STEP5_LANGLEVEL3": "The configuration is completed."
+
 
 }

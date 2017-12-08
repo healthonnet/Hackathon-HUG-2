@@ -24,10 +24,10 @@ export class WelcomePage implements OnInit {
       fr:'Français',
       en:'English',
       de:'Deutsch',
-      pt:'Port...',
+      pt:'Português',
       it:'Italiano',
-      za:'Afrikaans'
-    }
+      es:'Español'
+  }
     
   constructor(public navCtrl: NavController, public settings: Settings, private translate: TranslateService) {
   }

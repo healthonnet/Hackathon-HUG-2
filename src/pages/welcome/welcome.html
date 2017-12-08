@@ -12,34 +12,42 @@
   </div>
 -->
 <style>
-img.flag{ width:100%;height:100%}
+  .flag{max-height:40%;max-width:40%}
 </style>
-<h2>{{ 'AUX_TEXT_HAUT_WELCOME' | translate}}</h2>
-<ion-grid>
-  <ion-row>
-    <ion-col>
+
+<h2 text-center>{{ 'AUX_TEXT_HAUT_WELCOME' | translate}}</h2>
+<ion-grid fixed style="width:70%;right:15%;position:absolute;">
+  <ion-row nowrap>
+    <ion-col align-self-stretch>
+      <img (click)="setlang('fr')" src="../assets/img_aux/fr.svg" class="flag">
+      <img (click)="setlang('fr')" src="../assets/img_aux/ch.svg" class="flag">
+    </ion-col>
+    <ion-col align-self-stretch>
+      <img (click)="setlang('de')" src="../assets/img_aux/de.svg" class="flag">
+      <img (click)="setlang('de')" src="../assets/img_aux/ch.svg" class="flag">
+    </ion-col>
+    <ion-col align-self-stretch>
+      <img (click)="setlang('it')" src="../assets/img_aux/it.svg" class="flag">
+      <img (click)="setlang('it')" src="../assets/img_aux/ch.svg" class="flag">
+    </ion-col>
+  </ion-row>
+  <ion-row nowrap>
+    <ion-col  align-self-stretch>
       <img (click)="setlang('en')" src="../assets/img_aux/uk.svg" class="flag">
     </ion-col>
-    <ion-col>
-      <img (click)="setlang('fr')" src="../assets/img_aux/fr.svg.png" class="flag">
+    <ion-col align-self-stretch>
+      <img (click)="setlang('pt')" src="../assets/img_aux/pt.svg" class="flag">
     </ion-col>
-    <ion-col>
-      <img (click)="setlang('de')" src="../assets/img_aux/de.svg.png" class="flag">
+    <ion-col align-self-stretch>
+      <img (click)="setlang('es')" src="../assets/img_aux/es.svg" class="flag">
     </ion-col>
   </ion-row>
   <ion-row>
-    <ion-col>
-      <img (click)="setlang('pt')" src="../assets/img_aux/pt.svg.png" class="flag">
-    </ion-col>
-    <ion-col>
-      <img (click)="setlang('it')" src="../assets/img_aux/it.svg.png" class="flag">
-    </ion-col>
-    <ion-col>
-      <img (click)="setlang('za')" src="../assets/img_aux/sf.svg.png" class="flag">
+    <ion-col text-center>
+      <h2 id="text_bas">{{text_bas}}</h2>
     </ion-col>
   </ion-row>
 </ion-grid>
-<h2 id="text_bas">{{text_bas}}</h2>
 
 <!--
 <div padding>

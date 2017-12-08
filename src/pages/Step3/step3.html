@@ -4,27 +4,22 @@
   <ion-icon *ngIf="needValidation" round icon-start (click)="continue()" name='arrow-dropright-circle' class="steps right"></ion-icon>
   <h3 text-center>{{ 'AUX_TEXT_HAUT_STEP3' | translate }}</h3>
 
-  <style>
-    .small{font-size:medium}
-    .medium{font-size:large}
-    .large{font-size:x-large}
-  </style>
+  <div style="width:70%;right:15%;position:absolute;background-color:grey">
+    <style>
+      .small{font-size:medium}
+      .medium{font-size:large}
+      .large{font-size:x-large}
+    </style>
 
-  <ion-grid>
-  <ion-row>
-    <ion-col col-10>
-      <p text-center class="{{ mysizeclass }}">Scroll is a non-flexboxed scroll area that can scroll horizontally or vertically.
-      ion-Scroll Can be used in places where you may not need a full page scroller,
-      but a highly customized one, such as image scubber or comment scroller.</p>
-    </ion-col>
-    <ion-col>
-      <button (click)="setsize('small')" ion-button>{{ 'AUX_STEP3_BUTTON_SMALL' | translate }}</button>
+    <div text-center>
+      <button (click)="setsize('small')" small ion-button>{{ 'AUX_STEP3_BUTTON_SMALL' | translate }}</button>
       <button (click)="setsize('medium')" ion-button>{{ 'AUX_STEP3_BUTTON_MEDIUM' | translate }}</button>
-      <button (click)="setsize('large')" ion-button>{{ 'AUX_STEP3_BUTTON_LARGE' | translate }}</button>
-    </ion-col>
-  </ion-row>
-</ion-grid>
+      <button (click)="setsize('large')" large ion-button>{{ 'AUX_STEP3_BUTTON_LARGE' | translate }}</button>
+    </div>
 
+    <p text-center class="{{ mysizeclass }}">{{ 'AUX_STEP3_MAIN_TEXT' }}</p>
+  </div>
+  
 
 
 </ion-content>

@@ -4,16 +4,19 @@
   <ion-icon *ngIf="needValidation" round icon-start (click)="continue()" name='arrow-dropright-circle' class="steps right"></ion-icon>
   <h3 text-center>{{ 'AUX_TEXT_HAUT_STEP5' | translate }}</h3>
 
-  <ion-grid>
-  <ion-row>
-    <ion-col col-10>
-    </ion-col>
-    <ion-col>
+  <div style="width:70%;right:15%;position:absolute;">
+    <style>
+      .small{font-size:medium}
+      .medium{font-size:large}
+      .large{font-size:x-large}
+    </style>
 
-    </ion-col>
-  </ion-row>
-</ion-grid>
-
+    <div text-center>
+      <button (click)="setlanglevel('langlevel_0')" ion-button>{{ 'AUX_STEP5_LANGLEVEL1' | translate }}</button><br>
+      <button (click)="setlanglevel('langlevel_1')" ion-button>{{ 'AUX_STEP5_LANGLEVEL2' | translate }}</button><br>
+      <button (click)="setlanglevel('langlevel_2')" ion-button>{{ 'AUX_STEP5_LANGLEVEL3' | translate }}</button><br>
+    </div>
+  </div>
 
 
 </ion-content>

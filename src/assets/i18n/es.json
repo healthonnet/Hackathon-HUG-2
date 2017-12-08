@@ -44,5 +44,16 @@
 
   "CARDS_TITLE": "Social",
 
-  "SEARCH_TITLE": "Buscar"
+  "SEARCH_TITLE": "Buscar",
+
+  "AUX_TEXT_HAUT_WELCOME": "Escojamos juntos su tema. ¿ Cuál lengua?",
+  "AUX_TEXT_HAUT_STEP2": "Muy bien. ¿ Ahora cuál hace contrastar ",
+  "AUX_TEXT_HAUT_STEP3": "O.k., escojamos la talla del texto",
+  "AUX_TEXT_HAUT_STEP4": "¡ Súper! ¿ Y prefiere utilizar el sonido ?",
+  "AUX_TEXT_HAUT_STEP5": "¿ Por fin, cuál formulación?",
+
+  "AUX_STEP3_BUTTON_SMALL": "Pequeño",
+  "AUX_STEP3_BUTTON_MEDIUM": "Medio",
+  "AUX_STEP3_BUTTON_LARGE": "Grande",
+  "AUX_STEP3_MAIN_TEXT" : "Sólo conocemos las cosas que domesticamos, dijo el zorro. Los hombres ya no tienen tiempo de conocer nada. Compran en las tiendas cosas hechas. Pero como no hay ninguna tienda donde vendan amigos, los hombres ya no tienen amigos. Si quieres un amigo, !domestícame!"
 }
