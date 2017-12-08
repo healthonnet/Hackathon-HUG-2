@@ -49,6 +49,8 @@
   "AUX_TEXT_HAUT_WELCOME": "Choisissons ensemble votre thème. Quelle langue ?",
   "AUX_TEXT_HAUT_STEP2": "Très bien. Maintenant quel contraste ?",
   "AUX_TEXT_HAUT_STEP3": "Ok, choisissons la grosseur du texte",
+  "AUX_TEXT_HAUT_STEP4": "Super ! Et préférez-vous utiliser le son ?",
+  "AUX_TEXT_HAUT_STEP5": "Enfin, quel niveau de langage ?",
 
   "AUX_STEP3_BUTTON_SMALL": "Petit",
   "AUX_STEP3_BUTTON_MEDIUM": "Moyen",

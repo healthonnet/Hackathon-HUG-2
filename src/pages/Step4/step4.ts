@@ -11,9 +11,9 @@ import {Settings} from "../../providers/settings/settings";
 @IonicPage()
 @Component({
   selector: 'page-welcome',
-  templateUrl: 'step3.html'
+  templateUrl: 'step4.html'
 })
-export class Step3Page {
+export class Step4Page {
 
   // If we need an opt-in for the next step
   needValidation = true;
@@ -28,7 +28,7 @@ export class Step3Page {
   }
 
   continue() {
-    this.navCtrl.push('Step4Page');
+    this.navCtrl.push('Step5Page');
   }
   back() {
     this.navCtrl.pop();

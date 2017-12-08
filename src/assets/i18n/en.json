@@ -69,6 +69,8 @@
   "AUX_TEXT_HAUT_WELCOME": "Let's adjust your theme. Which language ?",
   "AUX_TEXT_HAUT_STEP2": "Ok, what about the constrat ?",
   "AUX_TEXT_HAUT_STEP3": "Ok, and now the text height ?",
+  "AUX_TEXT_HAUT_STEP4": "Great ! would you like to use the sound ?",
+  "AUX_TEXT_HAUT_STEP5": "Last, which language level ?",
 
   "AUX_STEP3_BUTTON_SMALL": "Small",
   "AUX_STEP3_BUTTON_MEDIUM": "Medium",

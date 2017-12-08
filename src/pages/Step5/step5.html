@@ -1,0 +1,19 @@
+<ion-content scroll="false">
+
+  <ion-icon *ngIf="navCtrl.canGoBack()" round icon-start (click)="back()" name='arrow-dropleft-circle'class="steps left"></ion-icon>
+  <ion-icon *ngIf="needValidation" round icon-start (click)="continue()" name='arrow-dropright-circle' class="steps right"></ion-icon>
+  <h3 text-center>{{ 'AUX_TEXT_HAUT_STEP5' | translate }}</h3>
+
+  <ion-grid>
+  <ion-row>
+    <ion-col col-10>
+    </ion-col>
+    <ion-col>
+
+    </ion-col>
+  </ion-row>
+</ion-grid>
+
+
+
+</ion-content>
