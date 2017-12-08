@@ -17,8 +17,9 @@ export class WelcomePage {
 
   constructor(public navCtrl: NavController, public settings: Settings) { }
 
-  continue() {
-    this.settings.setValue('','');
+  continue(lang) {
+    this.settings.setValue('aux_lang',lang);
+    console.log('aux_lang is set to '+lang)
     this.navCtrl.push('Step2Page');
   }
 }
