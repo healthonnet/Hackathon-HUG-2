@@ -23,6 +23,7 @@ export class Step2Page {
   setTheme(theme) {
     this.settings.dynamicContrast.next(theme);
     this.settings.setValue('aux_contrast',theme);
+    console.log('aux_contrast is set to '+theme);
   }
 
   continue() {
