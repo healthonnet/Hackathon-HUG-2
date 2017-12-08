@@ -1,17 +1,29 @@
 <ion-content scroll="false">
-    <ion-icon *ngIf="navCtrl.canGoBack()" round icon-start (click)="back()" name='arrow-dropleft-circle'class="steps left"></ion-icon>
-    <ion-icon *ngIf="needValidation" round icon-start (click)="continue()" name='arrow-dropright-circle' class="steps right"></ion-icon>
-<!--
-<div class="splash-bg"></div>
-  <div class="splash-info">
-    <div class="splash-logo"></div>
-    <div class="splash-intro">
-      Step2
-    </div>
-  </div>
--->
 
-<div padding>
-    <button ion-button block (click)="continue()">{{ 'TUTORIAL_CONTINUE_BUTTON' | translate }}</button>
-  </div>
+  <ion-icon *ngIf="navCtrl.canGoBack()" round icon-start (click)="back()" name='arrow-dropleft-circle'class="steps left"></ion-icon>
+  <ion-icon *ngIf="needValidation" round icon-start (click)="continue()" name='arrow-dropright-circle' class="steps right"></ion-icon>
+  <h3 text-center>{{ 'AUX TEST NUMBER TWO TEST' | translate }}</h3>
+  <ion-grid text-center	class="contrast">
+    <ion-row>
+      <ion-col (click)="continue()" col-6 class="chambray">
+        <ion-icon name="beer"></ion-icon>
+        <p>My Beer</p>
+      </ion-col>
+      <ion-col (click)="continue()" col-6 class="blue">
+        <ion-icon name="beer"></ion-icon>
+        <p>My Beer</p>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col (click)="continue()" col-6 class="dark">
+        <ion-icon name="beer"></ion-icon>
+        <p>My Beer</p>
+      </ion-col>
+      <ion-col (click)="continue()" col-6 class="light">
+        <ion-icon name="beer"></ion-icon>
+        <p>My Beer</p>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
 </ion-content>
