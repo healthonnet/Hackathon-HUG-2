@@ -1,14 +1,17 @@
 <ion-content scroll="false">
     <ion-icon *ngIf="navCtrl.canGoBack()" round icon-start (click)="back()" name='arrow-dropleft-circle'class="steps left"></ion-icon>
     <ion-icon *ngIf="needValidation" round icon-start (click)="continue()" name='arrow-dropright-circle' class="steps right"></ion-icon>
-  <div class="splash-bg"></div>
+<!--
+<div class="splash-bg"></div>
   <div class="splash-info">
     <div class="splash-logo"></div>
     <div class="splash-intro">
       Step2
     </div>
   </div>
-  <div padding>
+-->
+
+<div padding>
     <button ion-button block (click)="continue()">{{ 'TUTORIAL_CONTINUE_BUTTON' | translate }}</button>
   </div>
 </ion-content>

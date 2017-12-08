@@ -1,4 +1,7 @@
 <ion-content scroll="false">
+    <ion-icon *ngIf="navCtrl.canGoBack()" round icon-start (click)="back()" name='arrow-dropleft-circle'class="steps left"></ion-icon>
+    <ion-icon *ngIf="needValidation" round icon-start (click)="continue()" name='arrow-dropright-circle' class="steps right"></ion-icon>
+
 <!--
 <div class="splash-bg"></div>
   <div class="splash-info">
@@ -8,32 +11,36 @@
     </div>
   </div>
 -->
+<h2>{{ 'AUX_TEXT_HAUT_WELCOME' | translate}}</h2>
 <ion-grid>
   <ion-row>
     <ion-col>
-      <img (click)="continue('en')" src="../assets/img_aux/uk.svg">
+      <img (click)="setlang('en')" src="../assets/img_aux/uk.svg">
     </ion-col>
     <ion-col>
-      <img (click)="continue('fr')" src="../assets/img_aux/fr.svg.png">
+      <img (click)="setlang('fr')" src="../assets/img_aux/fr.svg.png">
     </ion-col>
     <ion-col>
-      <img (click)="continue('de')" src="../assets/img_aux/de.svg.png">
+      <img (click)="setlang('de')" src="../assets/img_aux/de.svg.png">
     </ion-col>
   </ion-row>
   <ion-row>
     <ion-col>
-      <img (click)="continue('pt')" src="../assets/img_aux/pt.svg.png">
+      <img (click)="setlang('pt')" src="../assets/img_aux/pt.svg.png">
     </ion-col>
     <ion-col>
-      <img (click)="continue('it')" src="../assets/img_aux/it.svg.png">
+      <img (click)="setlang('it')" src="../assets/img_aux/it.svg.png">
     </ion-col>
     <ion-col>
-      <img (click)="continue('za')" src="../assets/img_aux/sf.svg.png">
+      <img (click)="setlang('za')" src="../assets/img_aux/sf.svg.png">
     </ion-col>
   </ion-row>
 </ion-grid>
+<h2 id="text_bas">{{text_bas}}</h2>
 
-  <div padding>
+<!--
+<div padding>
     <button ion-button block (click)="continue()">{{ 'TUTORIAL_CONTINUE_BUTTON' | translate }}</button>
   </div>
+-->
 </ion-content>

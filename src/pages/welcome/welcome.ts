@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { OnInit, Component } from '@angular/core';
+import { TranslateService } from '@ngx-translate/core';
 import { IonicPage, NavController } from 'ionic-angular';
 import {Settings} from "../../providers/settings/settings";
 
@@ -13,13 +14,37 @@ import {Settings} from "../../providers/settings/settings";
   selector: 'page-welcome',
   templateUrl: 'welcome.html'
 })
-export class WelcomePage {
 
-  constructor(public navCtrl: NavController, public settings: Settings) { }
+export class WelcomePage implements OnInit {
 
-  continue(lang) {
-    this.settings.setValue('aux_lang',lang);
-    console.log('aux_lang is set to '+lang)
-    this.navCtrl.push('Step2Page');
+  needValidation = true;
+  text_bas="Français";
+  lang="fr";
+  languages = {
+      fr:'Français',
+      en:'English',
+      de:'Deutsch',
+      pt:'Port...',
+      it:'Italiano',
+      za:'Afrikaans'
+    }
+
+  constructor(public navCtrl: NavController, public settings: Settings, private translate: TranslateService) {
   }
+
+  ngOnInit(){
+    this.translate.use(this.lang)
+  }
+
+  setlang(lang) {
+    this.settings.setValue('aux_lang',lang);
+    console.log('aux_lang is set to '+lang);
+    this.text_bas = this.languages[lang];
+    this.translate.use(lang)
+  }
+  continue() {
+    if (this.lang != undefined)
+      this.navCtrl.push('Step2Page');
+  }
+
 }

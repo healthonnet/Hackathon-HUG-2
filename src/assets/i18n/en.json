@@ -64,5 +64,8 @@
   "CARDS_TITLE": "Social",
 
   "SEARCH_TITLE": "Search",
-  "SEARCH_PLACEHOLDER": "Search the items list, e.g. \"Donald Duck\""
+  "SEARCH_PLACEHOLDER": "Search the items list, e.g. \"Donald Duck\"",
+
+  "AUX_TEXT_HAUT_WELCOME": "Let's ajust your theme. Which language ?"
+
 }

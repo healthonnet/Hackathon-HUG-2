@@ -36,7 +36,7 @@ export function provideSettings(storage: Storage) {
     option4: 'Hello',
     textSize: 1, // (em)
     colorTheme: 'normal', // (B/W)
-    language: 'en'
+    language: 'fr'
   });
 }
 
