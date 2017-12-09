@@ -16196,7 +16196,7 @@ ion-spinner.spinner-paused svg {
 .tabs-md .tab-button {
   min-height: 5.6rem;
   font-weight: normal;
-  color: rgba(60, 60, 60, 0.7);
+  color: white;
   padding: 0;
 }
 
@@ -16239,7 +16239,7 @@ ion-spinner.spinner-paused svg {
   margin-top: 1px;
   min-width: 2.4rem;
 
-  color: rgba(60, 60, 60, 0.7);
+  color: white;
   -webkit-transition: -webkit-transform 0.3s ease-in-out;
   transition: -webkit-transform 0.3s ease-in-out;
   transition: transform 0.3s ease-in-out;
@@ -16307,7 +16307,7 @@ ion-spinner.spinner-paused svg {
 
 .tabs-md-primary .tab-button,
 .tabs-md-primary .tab-button-icon {
-  color: rgba(255, 255, 255, 0.7);
+  color: white;
 }
 
 .tabs-md-primary .tab-button:hover:not(.disable-hover),
@@ -16326,17 +16326,17 @@ ion-spinner.spinner-paused svg {
 
 .tabs-md-secondary .tab-button,
 .tabs-md-secondary .tab-button-icon {
-  color: rgba(0, 0, 0, 0.7);
+  color: white;
 }
 
 .tabs-md-secondary .tab-button:hover:not(.disable-hover),
 .tabs-md-secondary .tab-button[aria-selected=true],
 .tabs-md-secondary .tab-button[aria-selected=true] .tab-button-icon {
-  color: #000;
+  color: #fff;
 }
 
 .tabs-md-secondary[tabsHighlight=true] .tab-highlight {
-  background: #000;
+  background: #fff;
 }
 
 .tabs-md-danger .tabbar {
