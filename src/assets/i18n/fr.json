@@ -46,7 +46,7 @@
 
   "SEARCH_TITLE": "Recherche",
 
-  "AUX_TEXT_HAUT_WELCOME": "Choisissons ensemble votre thème. Quelle langue ?",
+  "AUX_TEXT_HAUT_WELCOME": "Bonjour, pour commencer votre visite,<br> choisissons ensemble votre thème. Quelle langue ?",
   "AUX_TEXT_HAUT_STEP2": "Très bien. Maintenant quel contraste ?",
   "AUX_TEXT_HAUT_STEP3": "Ok, choisissons la grosseur du texte",
   "AUX_TEXT_HAUT_STEP4": "Super ! Et préférez-vous utiliser le son ?",
@@ -60,8 +60,12 @@
   "AUX_STEP4_YES": "Oui",
   "AUX_STEP4_NO": "Non",
 
-  "AUX_STEP5_LANGLEVEL1": "C'est fait !",
-  "AUX_STEP5_LANGLEVEL2": "Le réglage est terminé.",
-  "AUX_STEP5_LANGLEVEL3": "La configuration est achevée"
- 
+  "AUX_STEP5_LANGLEVEL1": "Omelette",
+  "AUX_STEP5_LANGLEVEL2": "Omelette aux champignons",
+  "AUX_STEP5_LANGLEVEL3": "Omelette forestière",
+
+  "AUX_STEP6_LANGLEVEL1": "Genève est un canton. Les gens parlent beaucoup de langues Omelette",
+  "AUX_STEP6_LANGLEVEL2": "Genève est un canton où il y a beaucoup de nationalité. Les personnes parlent de nombreuses langues.",
+  "AUX_STEP6_LANGLEVEL3": "OmeGenève est à la fois un territoire cantonal et une ville multiculturelle et polyglotte."
+
 }

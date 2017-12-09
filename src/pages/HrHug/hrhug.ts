@@ -12,11 +12,6 @@ import { Platform } from 'ionic-angular';
 })
 export class HrHugPage {
 
-  // If we need an opt-in for the next step
-  needValidation = true;
-  mysizeclass='small';
-  speed = 1;
-  mycolor = { small:'default', medium:'default', large:'default'};
   constructor(public navCtrl: NavController,  public settings: Settings, private translate: TranslateService, private tts: TextToSpeech, private plt: Platform) {
   }
 

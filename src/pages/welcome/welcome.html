@@ -15,7 +15,7 @@
   .flag{height:40px;width:auto}
 </style>
 
-<h2 text-center>{{ 'AUX_TEXT_HAUT_WELCOME' | translate}}</h2>
+<h2 text-center>{{ 'AUX_TEXT_HAUT_WELCOME' | translate }}</h2>
 <ion-grid >
   <ion-row justify-content-center padding >
     <ion-col (click)="setlang('fr')" text-center [class.active]="langActive === 'fr'" class="flagblock politicallyCorrect">
@@ -44,7 +44,7 @@
   </ion-row>
   <ion-row >
     <ion-col text-center style="height: 30%">
-      <h2 id="text_bas">{{text_bas}}</h2>
+      <h1 id="text_bas">{{text_bas}}</h1>
     </ion-col>
   </ion-row>
 </ion-grid>
