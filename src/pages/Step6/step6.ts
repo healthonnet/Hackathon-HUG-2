@@ -13,10 +13,10 @@ import { Platform } from 'ionic-angular';
 */
 @IonicPage()
 @Component({
-  selector: 'page-step5',
-  templateUrl: 'step5.html'
+  selector: 'page-step6',
+  templateUrl: 'step6.html'
 })
-export class Step5Page {
+export class Step6Page {
 
   // If we need an opt-in for the next step
   needValidation = true;
@@ -58,7 +58,12 @@ export class Step5Page {
   show_setting(s){console.log(s+" is set to "+this.settings.allSettings[s])}
 
   continue() {
-    this.navCtrl.push('Step6Page');
+    this.show_setting('aux_lang');
+    this.show_setting('aux_contrast');
+    this.show_setting('aux_size');
+    this.show_setting('aux_vocalize');
+    this.show_setting('aux_languagelevel');
+    this.navCtrl.push('TabsPage');
 
   }
   back() {

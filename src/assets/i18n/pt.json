@@ -47,21 +47,16 @@
   "SEARCH_TITLE": "Pesquisa",
 
  
-  "AUX_TEXT_HAUT_WELCOME": "Choisissons ensemble votre thème. Quelle langue ?",
-  "AUX_TEXT_HAUT_STEP2": "Très bien. Maintenant quel contraste ?",
-  "AUX_TEXT_HAUT_STEP3": "Ok, choisissons la grosseur du texte",
-  "AUX_TEXT_HAUT_STEP4": "Super ! Et préférez-vous utiliser le son ?",
-  "AUX_TEXT_HAUT_STEP5": "Enfin, quel niveau de langage ?",
-
-  "AUX_STEP3_BUTTON_SMALL": "Petit",
-  "AUX_STEP3_BUTTON_MEDIUM": "Moyen",
-  "AUX_STEP3_BUTTON_LARGE": "Grand",
-
   "AUX_TEXT_HAUT_WELCOME": "Nos deixe escolher seu tema junto. Que idioma ?",
   "AUX_TEXT_HAUT_STEP2": "Muito bem. Agora o que contrasta?",
   "AUX_TEXT_HAUT_STEP3": "OK, nos deixe escolher o tamanho do texto",
   "AUX_TEXT_HAUT_STEP4": "Grande! E você prefere usar o som ?",
   "AUX_TEXT_HAUT_STEP5": "Finalmente, que formulação ?",
+  "AUX_TEXT_HAUT_STEP6": "Uma última escolha e visita boa!",
+
+  "AUX_STEP3_BUTTON_SMALL": "Petit",
+  "AUX_STEP3_BUTTON_MEDIUM": "Moyen",
+  "AUX_STEP3_BUTTON_LARGE": "Grand",
 
   "AUX_STEP4_YES": "Sim",
   "AUX_STEP4_NO": "Não",
@@ -71,8 +66,13 @@
   "AUX_STEP3_BUTTON_LARGE": "Grande",
   "AUX_STEP3_MAIN_TEXT": "Só se conhece aquilo que se amestra, diz a raposa. Os homens já não têm tempo para conhecer nada. Compram tudo já feito nas lojas. Mas como não se podem comprar amigos nas lojas, os homens deixaram de ter amigos. Se queres um amigo, amestra-me!",
 
-  "AUX_STEP5_LANGLEVEL1": "Está pronto!",
-  "AUX_STEP5_LANGLEVEL2": "A configuração está completa.",
-  "AUX_STEP5_LANGLEVEL3": "A configuração está completa."
+
+
+"AUX_STEP5_LANGLEVEL1" : "Omeleta" ,
+"AUX_STEP5_LANGLEVEL2" : "Omelete em forma de cogumelo" ,
+"AUX_STEP5_LANGLEVEL3" : "Forestal de tortilla" ,
+"AUX_STEP6_LANGLEVEL1" : "Genebra é um cantão. Pessoas falam muitos idiomas.",
+"AUX_STEP6_LANGLEVEL2" : "Genebra é um cantão onde há muita nacionalidade. As pessoas falam numerosos idiomas.",
+"AUX_STEP6_LANGLEVEL3" : "Genebra é ao mesmo tempo um território cantonal e uma cidade multicultural e poliglota."
 
 }

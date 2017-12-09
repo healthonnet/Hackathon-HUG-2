@@ -59,6 +59,7 @@
   "AUX_TEXT_HAUT_STEP3": "Ok, wählen wir die Dicke des Textes",
   "AUX_TEXT_HAUT_STEP4": "Super! Und ziehen Sie vor, den seinen zu benutzen ?",
   "AUX_TEXT_HAUT_STEP5": "Schliesslich, welche Formulierung ?", 
+  "AUX_TEXT_HAUT_STEP6": "Eine letzte Auswahl, und guter Besuch!",
 
 
   "AUX_STEP3_BUTTON_SMALL": "Klein",
@@ -69,7 +70,11 @@
   "AUX_STEP4_YES": "Ja",
   "AUX_STEP4_NO": "Nein",
 
-  "AUX_STEP5_LANGLEVEL1": "Es ist fertig!",
-  "AUX_STEP5_LANGLEVEL2": "Die Einstellung ist abgeschlossen.",
-  "AUX_STEP5_LANGLEVEL3": "Die Konfiguration ist abgeschlossen."
+"AUX_STEP5_LANGLEVEL1" : "Omelett" ,
+"AUX_STEP5_LANGLEVEL2" : "Omelett in den Pilzen", 
+"AUX_STEP5_LANGLEVEL3" : "Forstomelett" ,
+
+"AUX_STEP6_LANGLEVEL1" : "Genf ist ein Bezirk. Die Leute sprechen über viele Sprachen.",
+"AUX_STEP6_LANGLEVEL2" : "Genf ist ein Bezirk, wo es viele Nationalität gibt. Die Personen sprechen über zahlreiche Sprachen.",
+"AUX_STEP6_LANGLEVEL3" : "Genf ist gleichzeitig ein kantonales Territorium und eine multikulturelle und polyglotte Stadt."
 }

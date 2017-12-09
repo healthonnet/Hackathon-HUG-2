@@ -66,11 +66,12 @@
   "SEARCH_TITLE": "Ricerca",
   "SEARCH_PLACEHOLDER": "Trova elementi in lista, ex. \"Donald Duck\"",
 
-    "AUX_TEXT_HAUT_WELCOME": "Scegliamo insieme il vostro tema. Quale lingua ?",
+  "AUX_TEXT_HAUT_WELCOME": "Scegliamo insieme il vostro tema. Quale lingua ?",
   "AUX_TEXT_HAUT_STEP2": "Molto bene. Adesso che contrasto?",
   "AUX_TEXT_HAUT_STEP3": "Ok, scegliamo la taglia del testo",
   "AUX_TEXT_HAUT_STEP4": "Fantastici! E preferite utilizzarvi il suono ?",
   "AUX_TEXT_HAUT_STEP5": "Infine, quale formulazione ?",
+  "AUX_TEXT_HAUT_STEP6": "Un'ultima scelta, e buona visita!",
 
   "AUX_STEP4_YES": "Si",
   "AUX_STEP4_NO": "No",
@@ -82,6 +83,14 @@
 
   "AUX_STEP5_LANGLEVEL1": "È fatto!",
   "AUX_STEP5_LANGLEVEL2": "L'impostazione è completa.",
-  "AUX_STEP5_LANGLEVEL3": "La configurazione è completa."
+  "AUX_STEP5_LANGLEVEL3": "La configurazione è completa.",
+
+
+"AUX_STEP5_LANGLEVEL1" : "Frittata" ,
+"AUX_STEP5_LANGLEVEL2" : "frittata ai funghi" ,
+"AUX_STEP5_LANGLEVEL3" : "frittata forestale" ,
+"AUX_STEP6_LANGLEVEL1" : "Ginevra è un cantone. Le persone parlano molte lingue.",
+"AUX_STEP6_LANGLEVEL2" : "Ginevra è un cantone dove c'è molta nazionalità. Le persone parlano di numerose lingue.",
+"AUX_STEP6_LANGLEVEL3" : "Ginevra è al tempo stesso un territorio cantonale ed una città multiculturale e poliglotta."
 
 }

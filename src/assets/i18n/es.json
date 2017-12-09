@@ -46,11 +46,12 @@
 
   "SEARCH_TITLE": "Buscar",
 
-  "AUX_TEXT_HAUT_WELCOME": "Escojamos juntos su tema. ¿ Cuál lengua?",
+  "AUX_TEXT_HAUT_WELCOME": "Escojam os juntos su tema. ¿ Cuál lengua?",
   "AUX_TEXT_HAUT_STEP2": "Muy bien. ¿ Ahora cuál hace contrastar ",
   "AUX_TEXT_HAUT_STEP3": "O.k., escojamos la talla del texto",
   "AUX_TEXT_HAUT_STEP4": "¡ Súper! ¿ Y prefiere utilizar el sonido ?",
-  "AUX_TEXT_HAUT_STEP5": "¿ Por fin, cuál formulación?",
+"AUX_TEXT_HAUT_STEP5": "¿ Por fin, cuál formulación?",
+"AUX_TEXT_HAUT_STEP6": "¡ Una última elección, y buena visita!",
 
 
   "AUX_STEP3_BUTTON_SMALL": "Pequeño",
@@ -63,7 +64,17 @@
 
   "AUX_STEP5_LANGLEVEL1": "Está hecho !",
   "AUX_STEP5_LANGLEVEL2": "La configuración está completa.",
-  "AUX_STEP5_LANGLEVEL3": "La configuración está completa."
+  "AUX_STEP5_LANGLEVEL3": "La configuración está completa.",
+
+
+"AUX_STEP5_LANGLEVEL1" : "Tortilla" ,
+"AUX_STEP5_LANGLEVEL2" : "Tortilla de champiñones" ,
+"AUX_STEP5_LANGLEVEL3" : "Tortilla forestal" ,
+
+"AUX_STEP6_LANGLEVEL1" : "Ginebra es un cantón. La gente habla muchas lenguas.",
+"AUX_STEP6_LANGLEVEL2" : "Ginebra es un cantón donde hay mucha nacionalidad. Las personas hablan de numerosas lenguas.",
+"AUX_STEP6_LANGLEVEL3" : "Ginebra es a la vez un territorio cantonal y una ciudad multicultural y políglota."
+
 
 
 }
