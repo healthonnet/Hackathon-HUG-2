@@ -33,7 +33,7 @@ export class Step4Page {
     if (this.plt.is('ios')) {
       this.speed = 1.5;
     }
-    if(this.settings.allSettings) {
+    settings.load().then(() => {
       this.translate.get('AUX_TEXT_HAUT_STEP4').subscribe((value: string) => {
         this.tts.speak({
           text: value,
@@ -42,7 +42,7 @@ export class Step4Page {
         }).then(() => console.log('Success'))
           .catch((reason: any) => console.log(reason));
       });
-    }
+    });
   }
 
   setvocalize(vocalize) {

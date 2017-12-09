@@ -135,7 +135,7 @@ export class MyApp {
 
   initTranslate(defaultLanguage) {
     // Set the default language for translation strings, and the current language.
-    this.translate.setDefaultLang(defaultLanguage);
+    this.translate.setDefaultLang('fr');
     this.translate.use("de");
     this.translate.use("pt");
     this.translate.use("en");

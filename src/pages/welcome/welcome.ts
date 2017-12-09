@@ -28,24 +28,29 @@ export class WelcomePage implements OnInit {
       it:'Italiano',
       es:'Español'
   }
-    
+
   constructor(public navCtrl: NavController, public settings: Settings, private translate: TranslateService) {
   }
 
   ngOnInit(){
-    //     this.translate.use(this.lang)
-
+    // Force default for hackathon purpuse
+    //this.settings.setValue('aux_lang','fr');
+    this.settings.load().then(() => {
+      this.lang = 'fr';
+      this.setlang(this.lang);
+    });
   }
 
   setlang(lang) {
     this.settings.setValue('aux_lang',lang);
     console.log('aux_lang is set to '+lang);
     this.text_bas = this.languages[lang];
-    this.translate.use(lang)
+    this.translate.use(lang);
     this.lang = lang
 
   }
   continue() {
+    this.setlang(this.lang);
     this.navCtrl.push('Step2Page');
   }
 

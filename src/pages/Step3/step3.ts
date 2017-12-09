@@ -35,7 +35,8 @@ export class Step3Page {
     if (this.plt.is('ios')) {
       this.speed = 1.5;
     }
-    if(this.settings.allSettings) {
+
+    settings.load().then(() => {
       this.translate.get('AUX_TEXT_HAUT_STEP3').subscribe((value: string) => {
         this.tts.speak({
           text: value,
@@ -44,7 +45,7 @@ export class Step3Page {
         }).then(() => console.log('Success'))
           .catch((reason: any) => console.log(reason));
       });
-    }
+    });
   }
 
   setsize(size) {
