@@ -37,7 +37,7 @@ export class Step6Page {
       }
       settings.load().then(() => {
         if (this.settings.allSettings.aux_vocalize) {
-          this.translate.get('AUX_TEXT_HAUT_STEP5').subscribe((value: string) => {
+          this.translate.get('AUX_TEXT_HAUT_STEP6').subscribe((value: string) => {
             this.tts.speak({
               text: value,
               locale: locales[this.settings.allSettings.aux_lang],

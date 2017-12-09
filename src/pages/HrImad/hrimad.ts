@@ -18,6 +18,19 @@ import { Platform } from 'ionic-angular';
 })
 export class HrImadPage {
 
-  constructor(public navCtrl: NavController,  public settings: Settings, private translate: TranslateService, private tts: TextToSpeech, private plt: Platform) {  }
+  aux_contrast='blank';
+  aux_size='large';
+  aux_lang='fr';
+  aux_vocalize=true;
+  aux_languagelevel='a1'
 
+  constructor(public navCtrl: NavController,  public settings: Settings, private translate: TranslateService, private tts: TextToSpeech, private plt: Platform) {
+    settings.load().then(() => {
+      this.aux_lang = this.settings.allSettings.aux_lang
+      this.aux_contrast = this.settings.allSettings.aux_contrast
+      this.aux_size = this.settings.allSettings.aux_size
+      this.aux_vocalize = this.settings.allSettings.aux_vocalize
+      this.aux_languagelevel = this.settings.allSettings.aux_languagelevel
+    })
+  }
 }
