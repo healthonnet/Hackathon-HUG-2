@@ -18,6 +18,7 @@ import { TranslateService } from '@ngx-translate/core';
 export class Step4Page {
 
   vocalize=true;
+  needValidation=true;
 
   constructor(public navCtrl: NavController, private translate: TranslateService, public settings: Settings, private tts: TextToSpeech) {
       const locales = {

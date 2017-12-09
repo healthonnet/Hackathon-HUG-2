@@ -17,7 +17,11 @@
       <button (click)="setsize('large')" color="{{ mycolor.large}}" large ion-button>{{ 'AUX_STEP3_BUTTON_LARGE' | translate }}</button>
     </div>
 
-    <p text-center class="{{ mysizeclass }}">{{ 'AUX_STEP3_MAIN_TEXT' | translate }}</p>
+<ion-card>
+  <ion-card-content>
+      <p text-left class="{{ mysizeclass }}">{{ 'AUX_STEP3_MAIN_TEXT' | translate }}</p>
+  </ion-card-content>
+</ion-card>
   </div>
   
 

@@ -52,13 +52,18 @@
   "AUX_TEXT_HAUT_STEP4": "¡ Súper! ¿ Y prefiere utilizar el sonido ?",
   "AUX_TEXT_HAUT_STEP5": "¿ Por fin, cuál formulación?",
 
-  "AUX_STEP4_YES": "Si",
-  "AUX_STEP4_NO": "No",
-
-
 
   "AUX_STEP3_BUTTON_SMALL": "Pequeño",
   "AUX_STEP3_BUTTON_MEDIUM": "Medio",
   "AUX_STEP3_BUTTON_LARGE": "Grande",
-  "AUX_STEP3_MAIN_TEXT" : "Sólo conocemos las cosas que domesticamos, dijo el zorro. Los hombres ya no tienen tiempo de conocer nada. Compran en las tiendas cosas hechas. Pero como no hay ninguna tienda donde vendan amigos, los hombres ya no tienen amigos. Si quieres un amigo, !domestícame!"
+  "AUX_STEP3_MAIN_TEXT" : "Sólo conocemos las cosas que domesticamos, dijo el zorro. Los hombres ya no tienen tiempo de conocer nada. Compran en las tiendas cosas hechas. Pero como no hay ninguna tienda donde vendan amigos, los hombres ya no tienen amigos. Si quieres un amigo, !domestícame!",
+
+  "AUX_STEP4_YES": "Si",
+  "AUX_STEP4_NO": "No",
+
+  "AUX_STEP5_LANGLEVEL1": "Está hecho !",
+  "AUX_STEP5_LANGLEVEL2": "La configuración está completa.",
+  "AUX_STEP5_LANGLEVEL3": "La configuración está completa."
+
+
 }

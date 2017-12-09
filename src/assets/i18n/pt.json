@@ -69,7 +69,10 @@
   "AUX_STEP3_BUTTON_SMALL": "Pequeno",
   "AUX_STEP3_BUTTON_MEDIUM": "Modo",
   "AUX_STEP3_BUTTON_LARGE": "Grande",
-  "AUX_STEP3_MAIN_TEXT": "Só se conhece aquilo que se amestra, diz a raposa. Os homens já não têm tempo para conhecer nada. Compram tudo já feito nas lojas. Mas como não se podem comprar amigos nas lojas, os homens deixaram de ter amigos. Se queres um amigo, amestra-me!"
+  "AUX_STEP3_MAIN_TEXT": "Só se conhece aquilo que se amestra, diz a raposa. Os homens já não têm tempo para conhecer nada. Compram tudo já feito nas lojas. Mas como não se podem comprar amigos nas lojas, os homens deixaram de ter amigos. Se queres um amigo, amestra-me!",
 
+  "AUX_STEP5_LANGLEVEL1": "Está pronto!",
+  "AUX_STEP5_LANGLEVEL2": "A configuração está completa.",
+  "AUX_STEP5_LANGLEVEL3": "A configuração está completa."
 
 }

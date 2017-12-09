@@ -60,11 +60,16 @@
   "AUX_TEXT_HAUT_STEP4": "Super! Und ziehen Sie vor, den seinen zu benutzen ?",
   "AUX_TEXT_HAUT_STEP5": "Schliesslich, welche Formulierung ?", 
 
-  "AUX_STEP4_YES": "Ja",
-  "AUX_STEP4_NO": "Nein",
 
   "AUX_STEP3_BUTTON_SMALL": "Klein",
   "AUX_STEP3_BUTTON_MEDIUM": "Mittel",
   "AUX_STEP3_BUTTON_LARGE": "Gross",
-  "AUX_STEP3_MAIN_TEXT": "Man kennt die Dinge, die man zähmt, sagte der Fuchs. Die Menschen haben keine Zeit mehr, etwas kennen zu lernen. Sie kaufen die Dinge fix und fertig bei den Händlern. Aber weil niemand mit Freunden handelt, haben die Menschen keine Freunde mehr. Wenn Du einen Freund willst, zähme mich!"
+  "AUX_STEP3_MAIN_TEXT": "Man kennt die Dinge, die man zähmt, sagte der Fuchs. Die Menschen haben keine Zeit mehr, etwas kennen zu lernen. Sie kaufen die Dinge fix und fertig bei den Händlern. Aber weil niemand mit Freunden handelt, haben die Menschen keine Freunde mehr. Wenn Du einen Freund willst, zähme mich!",
+
+  "AUX_STEP4_YES": "Ja",
+  "AUX_STEP4_NO": "Nein",
+
+  "AUX_STEP5_LANGLEVEL1": "Es ist fertig!",
+  "AUX_STEP5_LANGLEVEL2": "Die Einstellung ist abgeschlossen.",
+  "AUX_STEP5_LANGLEVEL3": "Die Konfiguration ist abgeschlossen."
 }

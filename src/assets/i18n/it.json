@@ -78,8 +78,10 @@
   "AUX_STEP3_BUTTON_SMALL": "piccolo",
   "AUX_STEP3_BUTTON_MEDIUM": "Mezzo",
   "AUX_STEP3_BUTTON_LARGE": "Grande",
-  "AUX_STEP3_MAIN_TEXT":"Puoi conoscere solo quello che ti è familiare, che ti è domestico - disse la volpe. - Gli uomini non hanno più tempo di conoscere niente. Comprano nei negozi cose già pronte. Ma siccome non esistono negozianti di amici, gli uomini non hanno più amici. Tu, allora, se vuoi un amico, vedi di addomesticarmi."
+  "AUX_STEP3_MAIN_TEXT":"Puoi conoscere solo quello che ti è familiare, che ti è domestico - disse la volpe. - Gli uomini non hanno più tempo di conoscere niente. Comprano nei negozi cose già pronte. Ma siccome non esistono negozianti di amici, gli uomini non hanno più amici. Tu, allora, se vuoi un amico, vedi di addomesticarmi.",
 
-
+  "AUX_STEP5_LANGLEVEL1": "È fatto!",
+  "AUX_STEP5_LANGLEVEL2": "L'impostazione è completa.",
+  "AUX_STEP5_LANGLEVEL3": "La configurazione è completa."
 
 }
