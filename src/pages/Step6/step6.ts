@@ -50,11 +50,11 @@ export class Step6Page {
   }
 
   setlanguagelevel(languagelevel) {
+    this.languagelevel=languagelevel;
+    this.settings.dynamicLanguageLevel.next(languagelevel);
     this.settings.setValue('aux_languagelevel',languagelevel);
     console.log('aux_languagelevel is set to '+languagelevel);
-    this.languagelevel=languagelevel;
   }
-
   show_setting(s){console.log(s+" is set to "+this.settings.allSettings[s])}
 
   continue() {

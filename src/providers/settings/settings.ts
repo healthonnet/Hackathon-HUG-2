@@ -16,11 +16,13 @@ export class Settings {
 
   dynamicContrast:Subject<string>;
   dynamicSize:Subject<string>;
+  dynamicLanguageLevel:Subject<string>;
 
   constructor(public storage: Storage, defaults: any) {
     this._defaults = defaults;
     this.dynamicContrast = new Subject<string>();
     this.dynamicSize = new Subject<string>();
+    this.dynamicLanguageLevel = new Subject<string>();
   }
 
 

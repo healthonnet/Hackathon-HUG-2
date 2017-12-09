@@ -54,6 +54,9 @@ export class MyApp {
   @HostBinding('class.human-responsive-light') isLight;
   @HostBinding('class.human-responsive-medium') isMedium;
   @HostBinding('class.human-responsive-large') isLarge;
+  @HostBinding('class.human-responsive-a1') isA1;
+  @HostBinding('class.human-responsive-a2') isA2;
+  @HostBinding('class.human-responsive-b1') isB1;
 
   settings:Settings;
 
@@ -72,6 +75,10 @@ export class MyApp {
     settings.dynamicSize
       .subscribe((value) => {
         this.changeSize(value);
+      });
+    settings.dynamicLanguageLevel
+      .subscribe((value) => {
+        this.changeLevel(value);
       });
     // Get default language in settings
     settings.load().then(() => {
@@ -132,6 +139,36 @@ export class MyApp {
       default: {
         this.isMedium =  false;
         this.isLarge =  false;
+        break;
+      }
+    }
+  }
+
+  changeLevel(llevel): void {
+    switch(llevel) {
+      case "A1": {
+        this.isA1 = true;
+        this.isA2 = false;
+        this.isB1 = false;
+        break;
+      }
+      case "A2": {
+        this.isA1 = false;
+        this.isA2 = true;
+        this.isB1 = false;
+        break;
+      }
+      case "B1": {
+        this.isA1 = false;
+        this.isA2 = false;
+        this.isB1 = true;
+        break;
+      }
+      default: {
+        this.isA1 = false;
+        this.isA2 = false;
+        this.isB1 = true;
+        break;
       }
     }
   }
