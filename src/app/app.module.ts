@@ -40,6 +40,7 @@ export function provideSettings(storage: Storage) {
     aux_vocalize: true,
     aux_contrast: 'default', // (B/W)
     aux_size: 'default', // (B/W)
+    aux_languagelevel: 'B1', // (B/W)
   });
 }
 
