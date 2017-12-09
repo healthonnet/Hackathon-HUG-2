@@ -33,14 +33,16 @@ export class Step4Page {
     if (this.plt.is('ios')) {
       this.speed = 1.5;
     }
-    this.translate.get('AUX_TEXT_HAUT_STEP4').subscribe((value: string) => {
-      this.tts.speak({
-        text: value,
-        locale: locales[this.settings.allSettings.aux_lang],
-        rate: this.speed
-      }).then(() => console.log('Success'))
-        .catch((reason: any) => console.log(reason));
-    });
+    if(this.settings.allSettings) {
+      this.translate.get('AUX_TEXT_HAUT_STEP4').subscribe((value: string) => {
+        this.tts.speak({
+          text: value,
+          locale: locales[this.settings.allSettings.aux_lang],
+          rate: this.speed
+        }).then(() => console.log('Success'))
+          .catch((reason: any) => console.log(reason));
+      });
+    }
   }
 
   setvocalize(vocalize) {

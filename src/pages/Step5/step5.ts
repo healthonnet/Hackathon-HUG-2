@@ -35,7 +35,7 @@ export class Step5Page {
       if (this.plt.is('ios')) {
         this.speed = 1.5;
       }
-      if (this.settings.allSettings.aux_vocalize) {
+      if (this.settings.allSettings) {
         this.translate.get('AUX_TEXT_HAUT_STEP5').subscribe((value: string) => {
           this.tts.speak({
             text: value,

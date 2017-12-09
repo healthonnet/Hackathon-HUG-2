@@ -3,7 +3,6 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import { StatusBar } from '@ionic-native/status-bar';
 import { TranslateService } from '@ngx-translate/core';
 import { Config, Nav, Platform } from 'ionic-angular';
-import { TextToSpeech } from '@ionic-native/text-to-speech';
 
 
 import { FirstRunPage } from '../pages/pages';
@@ -53,17 +52,14 @@ export class MyApp {
   @HostBinding('class.human-responsive-medium') isMedium;
   @HostBinding('class.human-responsive-large') isLarge;
 
-  settings:Settings
+  settings:Settings;
 
-  constructor(private translate: TranslateService, private tts: TextToSpeech, platform: Platform, settings: Settings, private config: Config, private statusBar: StatusBar, private splashScreen: SplashScreen) {
+  constructor(private translate: TranslateService, platform: Platform, settings: Settings, private config: Config, private statusBar: StatusBar, private splashScreen: SplashScreen) {
     platform.ready().then(() => {
       // Okay, so the platform is ready and our plugins are available.
       // Here you can do any higher level native things you might need.
       this.statusBar.styleDefault();
       this.splashScreen.hide();
-      this.tts.speak('Hello World !')
-        .then(() => console.log('Success'))
-        .catch((reason: any) => console.log(reason));
     });
 
     settings.dynamicContrast
@@ -147,11 +143,13 @@ export class MyApp {
     this.translate.use("es");
     this.translate.use("fr");
 
+    /*
+      We reset each time for hackathon purpose
     if (this.translate.getBrowserLang() !== undefined) {
       this.translate.use(this.translate.getBrowserLang());
     } else {
       this.translate.use(defaultLanguage); // Set your language here
-    }
+    }*/
 
     this.translate.get(['BACK_BUTTON_TEXT']).subscribe(values => {
       this.config.set('ios', 'backButtonText', values.BACK_BUTTON_TEXT);
