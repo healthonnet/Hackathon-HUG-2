@@ -21,7 +21,15 @@ export class Step3Page {
   mysizeclass='small';
   mycolor = { small:'default', medium:'default', large:'default'}
   constructor(public navCtrl: NavController,  public settings: Settings, private translate: TranslateService, private tts: TextToSpeech) {
-      if (this.settings.allSettings.aux_vocalize) translate.get('AUX_TEXT_HAUT_STEP3').subscribe((value: string) => {
+    const locales = {
+        en: "en-GB",
+        fr: "fr-FR",
+        es: "es-ES",
+        it: "it-IT",
+        de: "de-DE",
+        pt: "pt-PT",
+      };
+    if (this.settings.allSettings.aux_vocalize) translate.get('AUX_TEXT_HAUT_STEP3').subscribe((value: string) => {
         //=> 'hello world'
         console.log(value);
         this.tts.speak({

@@ -21,7 +21,15 @@ export class Step5Page {
   needValidation = true;
   languagelevel = 'A1';
   constructor(public navCtrl: NavController,  public settings: Settings, private translate: TranslateService, private tts: TextToSpeech) {
-    if (this.settings.allSettings.aux_vocalize) translate.get('AUX_TEXT_HAUT_STEP5').subscribe((value: string) => {
+      const locales = {
+        en: "en-GB",
+        fr: "fr-FR",
+        es: "es-ES",
+        it: "it-IT",
+        de: "de-DE",
+        pt: "pt-PT",
+      };
+      if (this.settings.allSettings.aux_vocalize) translate.get('AUX_TEXT_HAUT_STEP5').subscribe((value: string) => {
         //=> 'hello world'
         console.log(value);
         this.tts.speak({
