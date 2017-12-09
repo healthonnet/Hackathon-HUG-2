@@ -6,4 +6,18 @@ page-hrimad {
   .button-xlarge {
     font-size: 3rem;
   }
+  .mockup {
+    .card * {
+      font-size: x-large !important;
+    }
+  }
+}
+.tabbar {
+  height:10%;
+
+  font-size: 3rem !important;
+
+  span {
+    font-size: 2rem !important;
+  }
 }

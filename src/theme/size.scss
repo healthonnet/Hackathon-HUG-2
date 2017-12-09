@@ -1,0 +1,25 @@
+.human-responsive-large {
+  .tabbar {
+    height:15%;
+
+    font-size: 4rem !important;
+
+    span {
+      font-size: 3rem !important;
+    }
+  }
+  .mockup {
+    .card * {
+      font-size: 6rem !important;
+    }
+  }
+}
+.human-responsive-medium  {
+
+  .mockup {
+    .card * {
+      font-size: 3rem !important;
+    }
+  }
+}
+
