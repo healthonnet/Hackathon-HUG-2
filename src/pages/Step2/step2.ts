@@ -10,7 +10,7 @@ import {Settings} from "../../providers/settings/settings";
 */
 @IonicPage()
 @Component({
-  selector: 'page-welcome',
+  selector: 'page-step2',
   templateUrl: 'step2.html'
 })
 export class Step2Page {

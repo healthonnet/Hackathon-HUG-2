@@ -4,19 +4,21 @@
   <ion-icon *ngIf="needValidation" round icon-start (click)="continue()" name='arrow-dropright-circle' class="steps right"></ion-icon>
   <h3 text-center>{{ 'AUX_TEXT_HAUT_STEP5' | translate }}</h3>
 
-  <div style="width:70%;right:15%;position:absolute;">
     <style>
       .small{font-size:medium}
       .medium{font-size:large}
       .large{font-size:x-large}
     </style>
 
-    <div text-center>
-      <button (click)="setlanguagelevel('A1')" [color]="languagelevel=='A1' ? 'secondary' : 'default'" ion-button>{{ 'AUX_STEP5_LANGLEVEL1' | translate }}</button><br>
-      <button (click)="setlanguagelevel('A2')" [color]="languagelevel=='A2' ? 'secondary' : 'default'" ion-button>{{ 'AUX_STEP5_LANGLEVEL2' | translate }}</button><br>
-      <button (click)="setlanguagelevel('B1')" [color]="languagelevel=='B1' ? 'secondary' : 'default'" ion-button>{{ 'AUX_STEP5_LANGLEVEL3' | translate }}</button><br>
-    </div>
-  </div>
+    <ion-grid>
+      <ion-row justify-content-center>
+      <ion-col align-self-start>
+      <button (click)="setlanguagelevel('A1')" [color]="languagelevel=='A1' ? 'secondary' : 'default'" large ion-button class="button-xlarge">{{ 'AUX_STEP5_LANGLEVEL1' | translate }}</button><br>
+      <button (click)="setlanguagelevel('A2')" [color]="languagelevel=='A2' ? 'secondary' : 'default'" large ion-button class="button-xlarge">{{ 'AUX_STEP5_LANGLEVEL2' | translate }}</button><br>
+      <button (click)="setlanguagelevel('B1')" [color]="languagelevel=='B1' ? 'secondary' : 'default'" large ion-button class="button-xlarge">{{ 'AUX_STEP5_LANGLEVEL3' | translate }}</button><br>
+      </ion-col>
+      </ion-row>
+    </ion-grid>
 
 
 </ion-content>

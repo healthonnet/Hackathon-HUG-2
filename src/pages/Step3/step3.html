@@ -6,15 +6,15 @@
 
   <div style="width:70%;right:15%;position:absolute">
     <style>
-      .small{font-size:medium}
-      .medium{font-size:large}
-      .large{font-size:x-large}
+      .small{font-size:large}
+      .medium{font-size:x-large}
+      .large{font-size:xx-large}
     </style>
 
     <div text-center>
-      <button (click)="setsize('small')" color="{{ mycolor.small}}" small ion-button>{{ 'AUX_STEP3_BUTTON_SMALL' | translate }}</button>
-      <button (click)="setsize('medium')" color="{{ mycolor.medium}}" ion-button>{{ 'AUX_STEP3_BUTTON_MEDIUM' | translate }}</button>
-      <button (click)="setsize('large')" color="{{ mycolor.large}}" large ion-button>{{ 'AUX_STEP3_BUTTON_LARGE' | translate }}</button>
+      <button (click)="setsize('small')" color="{{ mycolor.small}}" ion-button>{{ 'AUX_STEP3_BUTTON_SMALL' | translate }}</button>
+      <button (click)="setsize('medium')" color="{{ mycolor.medium}}" large ion-button>{{ 'AUX_STEP3_BUTTON_MEDIUM' | translate }}</button>
+      <button (click)="setsize('large')" color="{{ mycolor.large}}" large ion-button class="button-xlarge">{{ 'AUX_STEP3_BUTTON_LARGE' | translate }}</button>
     </div>
 
 <ion-card>
@@ -23,7 +23,7 @@
   </ion-card-content>
 </ion-card>
   </div>
-  
+
 
 
 </ion-content>

@@ -1,4 +1,4 @@
-page-welcome {
+page-step2 {
   .splash-bg {
     position: relative;
     background: url('../assets/img/splashbg.png') no-repeat transparent;
@@ -14,8 +14,13 @@ page-welcome {
     to { background-position: 100% 0; }
   }
 
+  h3 {
+    margin-top: 5%;
+    font-size: 3.5rem;
+  }
+
   .contrast {
-    height: 90%;
+    height: 85%;
     position: absolute;
     bottom: 0;
     font-size: 3.2em;

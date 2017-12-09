@@ -13,7 +13,7 @@ import { Platform } from 'ionic-angular';
 */
 @IonicPage()
 @Component({
-  selector: 'page-welcome',
+  selector: 'page-step4',
   templateUrl: 'step4.html'
 })
 export class Step4Page {
