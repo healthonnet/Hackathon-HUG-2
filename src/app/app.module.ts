@@ -37,6 +37,7 @@ export function provideSettings(storage: Storage) {
     option3: '3',
     option4: 'Hello',
     aux_lang: 'fr',
+    aux_vocalize: true,
     aux_contrast: 'default', // (B/W)
     aux_size: 'default', // (B/W)
   });

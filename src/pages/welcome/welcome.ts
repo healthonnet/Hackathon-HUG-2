@@ -19,7 +19,7 @@ export class WelcomePage implements OnInit {
 
   needValidation = true;
   text_bas="Français";
-  lang="fr";
+  langActive="fr";
   languages = {
       fr:'Français',
       en:'English',
@@ -36,8 +36,8 @@ export class WelcomePage implements OnInit {
     // Force default for hackathon purpuse
     //this.settings.setValue('aux_lang','fr');
     this.settings.load().then(() => {
-      this.lang = 'fr';
-      this.setlang(this.lang);
+      this.langActive = 'fr';
+      this.setlang(this.langActive);
     });
   }
 
@@ -46,11 +46,11 @@ export class WelcomePage implements OnInit {
     console.log('aux_lang is set to '+lang);
     this.text_bas = this.languages[lang];
     this.translate.use(lang);
-    this.lang = lang
+    this.langActive = lang
 
   }
   continue() {
-    this.setlang(this.lang);
+    this.setlang(this.langActive);
     this.navCtrl.push('Step2Page');
   }
 
