@@ -34,11 +34,12 @@ export class Step4Page {
       this.speed = 1.5;
     }
     settings.load().then(() => {
-      if (this.settings.allSettings.aux_vocalize) {
+      this.vocalize = settings.allSettings.aux_vocalize;
+      if (settings.allSettings.aux_vocalize) {
         this.translate.get('AUX_TEXT_HAUT_STEP4').subscribe((value: string) => {
           this.tts.speak({
             text: value,
-            locale: locales[this.settings.allSettings.aux_lang],
+            locale: locales[settings.allSettings.aux_lang],
             rate: this.speed
           }).then(() => console.log('Success'))
             .catch((reason: any) => console.log(reason));

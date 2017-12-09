@@ -18,32 +18,32 @@
 <h2 text-center>{{ 'AUX_TEXT_HAUT_WELCOME' | translate}}</h2>
 <ion-grid >
   <ion-row justify-content-center padding >
-    <ion-col text-center [class.active]="lang === 'fr'" class="flagblock politicallyCorrect">
-        <img (click)="setlang('fr')" [src]="'assets/img_aux/fr.svg'" class="flag">
-        <img (click)="setlang('fr')" [src]="'assets/img_aux/ch.svg'" class="flag swiss">
+    <ion-col (click)="setlang('fr')" text-center [class.active]="langActive === 'fr'" class="flagblock politicallyCorrect">
+        <img [src]="'assets/img_aux/fr.svg'" class="flag">
+        <img [src]="'assets/img_aux/ch.svg'" class="flag swiss">
       </ion-col>
-    <ion-col  text-center [class.active]="lang === 'de'" class="flagblock politicallyCorrect">
-      <img (click)="setlang('de')" [src]="'assets/img_aux/de.svg'" class="flag">
-      <img (click)="setlang('de')" [src]="'assets/img_aux/ch.svg'" class="flag swiss">
+    <ion-col (click)="setlang('de')" text-center [class.active]="langActive === 'de'" class="flagblock politicallyCorrect">
+      <img [src]="'assets/img_aux/de.svg'" class="flag">
+      <img [src]="'assets/img_aux/ch.svg'" class="flag swiss">
     </ion-col>
-    <ion-col text-center [class.active]="lang === 'it'" class="flagblock politicallyCorrect">
-      <img (click)="setlang('it')" [src]="'assets/img_aux/it.svg'" class="flag">
-      <img (click)="setlang('it')" [src]="'assets/img_aux/ch.svg'" class="flag swiss">
-    </ion-col>
-  </ion-row>
-  <ion-row  text-center>
-    <ion-col  text-center   [class.active]="lang === 'en'" class="flagblock">
-      <img (click)="setlang('en')" [src]="'assets/img_aux/uk.svg'" class="flag">
-    </ion-col>
-    <ion-col text-center [class.active]="lang === 'pt'" class="flagblock">
-      <img (click)="setlang('pt')" [src]="'assets/img_aux/pt.svg'" class="flag">
-    </ion-col>
-    <ion-col text-center [class.active]="lang === 'es'" class="flagblock">
-      <img (click)="setlang('es')" [src]="'assets/img_aux/es.svg'" class="flag">
+    <ion-col (click)="setlang('it')" text-center [class.active]="langActive === 'it'" class="flagblock politicallyCorrect">
+      <img [src]="'assets/img_aux/it.svg'" class="flag">
+      <img [src]="'assets/img_aux/ch.svg'" class="flag swiss">
     </ion-col>
   </ion-row>
-  <ion-row  style="height: 30%">
-    <ion-col text-center>
+  <ion-row  text-center padding>
+    <ion-col (click)="setlang('en')"  text-center   [class.active]="langActive === 'en'" class="flagblock">
+      <img [src]="'assets/img_aux/uk.svg'" class="flag">
+    </ion-col>
+    <ion-col (click)="setlang('pt')" text-center [class.active]="langActive === 'pt'" class="flagblock">
+      <img [src]="'assets/img_aux/pt.svg'" class="flag">
+    </ion-col>
+    <ion-col (click)="setlang('es')" text-center [class.active]="langActive === 'es'" class="flagblock">
+      <img [src]="'assets/img_aux/es.svg'" class="flag">
+    </ion-col>
+  </ion-row>
+  <ion-row >
+    <ion-col text-center style="height: 30%">
       <h2 id="text_bas">{{text_bas}}</h2>
     </ion-col>
   </ion-row>

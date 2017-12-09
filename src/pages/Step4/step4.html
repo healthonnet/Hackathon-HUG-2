@@ -9,10 +9,10 @@
     <ion-row></ion-row>
     <ion-row justify-content-center>
       <ion-col align-self-start>
-          <button (click)="setvocalize(true)" [color]="vocalize ? 'secondary' : 'default'"  full large ion-button class="button-xlarge">{{ 'AUX_STEP4_YES' | translate }}</button>
+          <button (click)="setvocalize(true)" [color]="vocalize ? 'secondary' : 'default'"  full large ion-button class="button-xlarge" [class.active]="vocalize">{{ 'AUX_STEP4_YES' | translate }}</button>
       </ion-col>
       <ion-col align-self-start>
-        <button (click)="setvocalize(false)" [color]="vocalize ? 'default' : 'secondary'" full large ion-button class="button-xlarge">{{ 'AUX_STEP4_NO' | translate }}</button>
+        <button (click)="setvocalize(false)" [color]="vocalize ? 'default' : 'secondary'" full large ion-button class="button-xlarge" [class.active]="!vocalize">{{ 'AUX_STEP4_NO' | translate }}</button>
       </ion-col>
     </ion-row>
     <ion-row></ion-row>
