@@ -6,5 +6,5 @@ export const FirstRunPage = 'WelcomePage';
 export const MainPage = 'TabsPage';
 
 // The initial root pages for our tabs (remove if not using tabs)
-export const Tab1Root = 'ListMasterPage';
-export const Tab2Root = 'SettingsPage';
+export const Tab1Root = 'HrHugPage';
+export const Tab2Root = 'HrImadPage';

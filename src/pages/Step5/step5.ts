@@ -58,12 +58,12 @@ export class Step5Page {
   show_setting(s){console.log(s+" is set to "+this.settings.allSettings[s])}
 
   continue() {
-    //this.navCtrl.push('TabsPage');
     this.show_setting('aux_lang');
     this.show_setting('aux_contrast');
     this.show_setting('aux_size');
     this.show_setting('aux_vocalize');
     this.show_setting('aux_languagelevel');
+    this.navCtrl.push('TabsPage');
 
   }
   back() {

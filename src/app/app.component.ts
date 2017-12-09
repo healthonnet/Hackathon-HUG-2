@@ -38,6 +38,8 @@ export class MyApp {
     { title: 'Step3', component: 'Step3Page' },
     { title: 'Step4', component: 'Step4Page' },
     { title: 'Step5', component: 'Step5Page' },
+    { title: 'HrHug', component: 'HrHugPage' },
+    { title: 'HrImad', component: 'HrImadPage' },
     { title: 'Tabs', component: 'TabsPage' },
     { title: 'Cards', component: 'CardsPage' },
     { title: 'Content', component: 'ContentPage' },
