@@ -9,6 +9,10 @@ page-step4 {
     span {
       font-size: 2em;
     }
+    &.active {
+      font-size: 1em;
+      margin-top: -10%;
+    }
   }
   .grid { height: 80%;
     position: absolute;
