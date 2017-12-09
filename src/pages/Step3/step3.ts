@@ -20,7 +20,8 @@ export class Step3Page {
 
   // If we need an opt-in for the next step
   needValidation = true;
-  mysizeclass='small';
+  mysizeclass='medium';
+
   speed = 1;
   mycolor = { small:'default', medium:'default', large:'default'};
   constructor(public navCtrl: NavController,  public settings: Settings, private translate: TranslateService, private tts: TextToSpeech, private plt: Platform) {
