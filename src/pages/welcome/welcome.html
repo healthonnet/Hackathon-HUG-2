@@ -19,27 +19,27 @@
 <ion-grid fixed style="width:70%;right:15%;position:absolute;">
   <ion-row justify-content-center padding >
     <ion-col text-center [class.active]="lang === 'fr'" class="flagblock">
-        <img (click)="setlang('fr')" src="../assets/img_aux/fr.svg" class="flag">
-        <img (click)="setlang('fr')" src="../assets/img_aux/ch.svg" class="flag">
+        <img (click)="setlang('fr')" [src]="'assets/img_aux/fr.svg'" class="flag">
+        <img (click)="setlang('fr')" [src]="'assets/img_aux/ch.svg'" class="flag">
       </ion-col>
     <ion-col  text-center [class.active]="lang === 'de'" class="flagblock">
-      <img (click)="setlang('de')" src="../assets/img_aux/de.svg" class="flag">
-      <img (click)="setlang('de')" src="../assets/img_aux/ch.svg" class="flag">
+      <img (click)="setlang('de')" [src]="'assets/img_aux/de.svg'" class="flag">
+      <img (click)="setlang('de')" [src]="'assets/img_aux/ch.svg'" class="flag">
     </ion-col>
     <ion-col text-center [class.active]="lang === 'it'" class="flagblock">
-      <img (click)="setlang('it')" src="../assets/img_aux/it.svg" class="flag">
-      <img (click)="setlang('it')" src="../assets/img_aux/ch.svg" class="flag">
+      <img (click)="setlang('it')" [src]="'assets/img_aux/it.svg'" class="flag">
+      <img (click)="setlang('it')" [src]="'assets/img_aux/ch.svg'" class="flag">
     </ion-col>
   </ion-row>
   <ion-row  text-center>
     <ion-col  text-center   [class.active]="lang === 'en'" class="flagblock">
-      <img (click)="setlang('en')" src="../assets/img_aux/uk.svg" class="flag">
+      <img (click)="setlang('en')" [src]="'assets/img_aux/uk.svg'" class="flag">
     </ion-col>
     <ion-col text-center [class.active]="lang === 'pt'" class="flagblock">
-      <img (click)="setlang('pt')" src="../assets/img_aux/pt.svg" class="flag">
+      <img (click)="setlang('pt')" [src]="'assets/img_aux/pt.svg'" class="flag">
     </ion-col>
     <ion-col text-center [class.active]="lang === 'es'" class="flagblock">
-      <img (click)="setlang('es')" src="../assets/img_aux/es.svg" class="flag">
+      <img (click)="setlang('es')" [src]="'assets/img_aux/es.svg'" class="flag">
     </ion-col>
   </ion-row>
   <ion-row >
