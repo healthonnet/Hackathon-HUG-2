@@ -55,8 +55,6 @@ export class Step5Page {
     this.languagelevel=languagelevel;
   }
 
-  show_setting(s){console.log(s+" is set to "+this.settings.allSettings[s])}
-
   continue() {
     this.navCtrl.push('Step6Page');
 
