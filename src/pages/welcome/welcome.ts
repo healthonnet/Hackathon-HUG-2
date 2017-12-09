@@ -35,10 +35,12 @@ export class WelcomePage implements OnInit {
   ngOnInit(){
     // Force default for hackathon purpuse
     //this.settings.setValue('aux_lang','fr');
-    this.settings.load().then(() => {
-      this.langActive = 'fr';
-      this.setlang(this.langActive);
-    });
+    setTimeout(() => {
+      this.settings.load().then(() => {
+        this.langActive = 'fr';
+        this.setlang(this.langActive);
+      });
+    }, 100);
   }
 
   setlang(lang) {
@@ -46,7 +48,7 @@ export class WelcomePage implements OnInit {
     console.log('aux_lang is set to '+lang);
     this.text_bas = this.languages[lang];
     this.translate.use(lang);
-    this.langActive = lang
+    this.langActive = lang;
 
   }
   continue() {
